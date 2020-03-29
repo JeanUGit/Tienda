@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Capa_Diseño
+{
+    public partial class FrmRegistroVinculos : Form
+    {
+        public FrmRegistroVinculos()
+        {
+            InitializeComponent();
+            BtnRegistroTarjeta.Visible = true;
+            BtnVincular.Visible = false;
+        }
+
+        private void BtnRegistroTarjeta_Click(object sender, EventArgs e)
+        {
+            BtnRegistroTarjeta.Visible = false;
+            BtnVincular.Visible = true;
+        }
+    }
+}

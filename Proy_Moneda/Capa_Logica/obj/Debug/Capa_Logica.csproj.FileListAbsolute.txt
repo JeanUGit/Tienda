@@ -1,0 +1,9 @@
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\bin\Debug\Capa_Logica.dll
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\bin\Debug\Capa_Logica.pdb
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\bin\Debug\Capa_Conexion.dll
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\bin\Debug\Capa_Conexion.pdb
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csprojAssemblyReference.cache
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csproj.CopyComplete
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.dll
+C:\Users\USUARIO\source\repos\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.pdb
