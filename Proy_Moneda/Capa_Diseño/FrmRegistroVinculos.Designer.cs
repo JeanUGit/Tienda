@@ -165,7 +165,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Lime;
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Location = new System.Drawing.Point(435, 0);
             this.textBox3.Multiline = true;

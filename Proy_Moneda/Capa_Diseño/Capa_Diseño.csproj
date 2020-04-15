@@ -103,5 +103,15 @@
       <Name>Capa_Logica</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\3643762-find-glass-magnifying-search-zoom_113420.png" />
+    <Content Include="Imagenes\alertcircleoutline_110926.png" />
+    <Content Include="Imagenes\arrowheaddownoutline_110820.png" />
+    <Content Include="Imagenes\backspaceoutline_110915.png" />
+    <Content Include="Imagenes\checkmarkoutline_110785.png" />
+    <Content Include="Imagenes\menuoutline_110931.png" />
+    <Content Include="Imagenes\questionmarkcircleoutline_110819.png" />
+    <Content Include="Imagenes\shoppingcartoutline_110834.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
