@@ -23,10 +23,7 @@ namespace Capa_Diseño
          
         }
 
-        private void TsmEmpleados_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
 
         private void TmsVinculacion_Click(object sender, EventArgs e)
         {
