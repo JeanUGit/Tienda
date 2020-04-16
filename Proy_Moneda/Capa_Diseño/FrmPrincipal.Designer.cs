@@ -32,7 +32,6 @@
             this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -62,6 +61,7 @@
             this.TsmCerrar.Name = "TsmCerrar";
             this.TsmCerrar.Size = new System.Drawing.Size(26, 20);
             this.TsmCerrar.Text = "X";
+            this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
             // 
             // textBox2
             // 
@@ -83,16 +83,6 @@
             this.textBox1.Size = new System.Drawing.Size(800, 6);
             this.textBox1.TabIndex = 48;
             // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(-2, 24);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(797, 6);
-            this.textBox6.TabIndex = 47;
-            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
@@ -105,7 +95,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(533, 232);
+            this.button6.Location = new System.Drawing.Point(533, 226);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(141, 109);
             this.button6.TabIndex = 45;
@@ -114,7 +104,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(329, 232);
+            this.button5.Location = new System.Drawing.Point(329, 226);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(141, 109);
             this.button5.TabIndex = 44;
@@ -123,7 +113,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(121, 232);
+            this.button4.Location = new System.Drawing.Point(121, 226);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(141, 109);
             this.button4.TabIndex = 43;
@@ -132,30 +122,33 @@
             // 
             // BtnVinculacion
             // 
-            this.BtnVinculacion.Location = new System.Drawing.Point(533, 77);
+            this.BtnVinculacion.Location = new System.Drawing.Point(533, 71);
             this.BtnVinculacion.Name = "BtnVinculacion";
             this.BtnVinculacion.Size = new System.Drawing.Size(141, 109);
             this.BtnVinculacion.TabIndex = 42;
             this.BtnVinculacion.Text = "Vinculaciones";
             this.BtnVinculacion.UseVisualStyleBackColor = true;
+            this.BtnVinculacion.Click += new System.EventHandler(this.BtnVinculacion_Click);
             // 
             // BtnRecargas
             // 
-            this.BtnRecargas.Location = new System.Drawing.Point(329, 77);
+            this.BtnRecargas.Location = new System.Drawing.Point(329, 71);
             this.BtnRecargas.Name = "BtnRecargas";
             this.BtnRecargas.Size = new System.Drawing.Size(141, 109);
             this.BtnRecargas.TabIndex = 41;
             this.BtnRecargas.Text = "Recargas";
             this.BtnRecargas.UseVisualStyleBackColor = true;
+            this.BtnRecargas.Click += new System.EventHandler(this.BtnRecargas_Click);
             // 
             // BtnEmpleados
             // 
-            this.BtnEmpleados.Location = new System.Drawing.Point(121, 77);
+            this.BtnEmpleados.Location = new System.Drawing.Point(121, 71);
             this.BtnEmpleados.Name = "BtnEmpleados";
             this.BtnEmpleados.Size = new System.Drawing.Size(141, 109);
             this.BtnEmpleados.TabIndex = 40;
             this.BtnEmpleados.Text = "Registro\r\nEmpleados";
             this.BtnEmpleados.UseVisualStyleBackColor = true;
+            this.BtnEmpleados.Click += new System.EventHandler(this.BtnEmpleados_Click);
             // 
             // FrmPrincipal
             // 
@@ -165,7 +158,6 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -189,7 +181,6 @@
         private System.Windows.Forms.ToolStripMenuItem TsmCerrar;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;

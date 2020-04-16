@@ -28,256 +28,318 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TxtDocumento = new System.Windows.Forms.TextBox();
-            this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.TxtInstituto = new System.Windows.Forms.TextBox();
-            this.BtnRegistrar = new System.Windows.Forms.Button();
-            this.BtnActualizar = new System.Windows.Forms.Button();
-            this.TxtCodigo = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.TxtSaldoInicial = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.BtnVincular = new System.Windows.Forms.Button();
+            this.BtnRegistroTarjeta = new System.Windows.Forms.Button();
             this.TxtCorreo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.BtnRegistroTarjeta = new System.Windows.Forms.Button();
-            this.BtnVincular = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtSaldoInicial = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TxtCodigo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BtnActualizar = new System.Windows.Forms.Button();
+            this.BtnRegistrar = new System.Windows.Forms.Button();
+            this.TxtInstituto = new System.Windows.Forms.TextBox();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.TxtDocumento = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.TsmRecargas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
+            this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // BtnVincular
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre completo:";
+            this.BtnVincular.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnVincular.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVincular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnVincular.Location = new System.Drawing.Point(471, 187);
+            this.BtnVincular.Name = "BtnVincular";
+            this.BtnVincular.Size = new System.Drawing.Size(94, 33);
+            this.BtnVincular.TabIndex = 46;
+            this.BtnVincular.Text = "Vincular";
+            this.BtnVincular.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // BtnRegistroTarjeta
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 183);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Institución:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 65);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Documento:";
-            // 
-            // TxtDocumento
-            // 
-            this.TxtDocumento.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDocumento.Location = new System.Drawing.Point(37, 88);
-            this.TxtDocumento.Name = "TxtDocumento";
-            this.TxtDocumento.Size = new System.Drawing.Size(235, 27);
-            this.TxtDocumento.TabIndex = 3;
-            // 
-            // TxtNombre
-            // 
-            this.TxtNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombre.Location = new System.Drawing.Point(37, 146);
-            this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(368, 27);
-            this.TxtNombre.TabIndex = 4;
-            // 
-            // TxtInstituto
-            // 
-            this.TxtInstituto.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtInstituto.Location = new System.Drawing.Point(37, 205);
-            this.TxtInstituto.Name = "TxtInstituto";
-            this.TxtInstituto.Size = new System.Drawing.Size(368, 27);
-            this.TxtInstituto.TabIndex = 5;
-            // 
-            // BtnRegistrar
-            // 
-            this.BtnRegistrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegistrar.Location = new System.Drawing.Point(37, 301);
-            this.BtnRegistrar.Name = "BtnRegistrar";
-            this.BtnRegistrar.Size = new System.Drawing.Size(94, 33);
-            this.BtnRegistrar.TabIndex = 6;
-            this.BtnRegistrar.Text = "Registrar";
-            this.BtnRegistrar.UseVisualStyleBackColor = true;
-            // 
-            // BtnActualizar
-            // 
-            this.BtnActualizar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnActualizar.Location = new System.Drawing.Point(161, 301);
-            this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(94, 33);
-            this.BtnActualizar.TabIndex = 7;
-            this.BtnActualizar.Text = "Actualizar";
-            this.BtnActualizar.UseVisualStyleBackColor = true;
-            // 
-            // TxtCodigo
-            // 
-            this.TxtCodigo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigo.Location = new System.Drawing.Point(471, 88);
-            this.TxtCodigo.Name = "TxtCodigo";
-            this.TxtCodigo.Size = new System.Drawing.Size(235, 27);
-            this.TxtCodigo.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(467, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 19);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Código:";
-            // 
-            // TxtSaldoInicial
-            // 
-            this.TxtSaldoInicial.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSaldoInicial.Location = new System.Drawing.Point(471, 146);
-            this.TxtSaldoInicial.Name = "TxtSaldoInicial";
-            this.TxtSaldoInicial.Size = new System.Drawing.Size(156, 27);
-            this.TxtSaldoInicial.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(467, 124);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 19);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Saldo inicial:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(435, 0);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(6, 354);
-            this.textBox3.TabIndex = 12;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.Lime;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(730, -1);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(6, 355);
-            this.textBox4.TabIndex = 13;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.Lime;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(0, -1);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(6, 355);
-            this.textBox5.TabIndex = 14;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.Lime;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(0, 0);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(736, 6);
-            this.textBox6.TabIndex = 15;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.Lime;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(0, 348);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(736, 6);
-            this.textBox7.TabIndex = 16;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(198, 26);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Registro de personas:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(453, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(186, 26);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Registro de tarjetas:";
+            this.BtnRegistroTarjeta.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnRegistroTarjeta.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistroTarjeta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnRegistroTarjeta.Location = new System.Drawing.Point(471, 187);
+            this.BtnRegistroTarjeta.Name = "BtnRegistroTarjeta";
+            this.BtnRegistroTarjeta.Size = new System.Drawing.Size(94, 33);
+            this.BtnRegistroTarjeta.TabIndex = 45;
+            this.BtnRegistroTarjeta.Text = "Registrar";
+            this.BtnRegistroTarjeta.UseVisualStyleBackColor = false;
             // 
             // TxtCorreo
             // 
             this.TxtCorreo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCorreo.Location = new System.Drawing.Point(37, 261);
+            this.TxtCorreo.Location = new System.Drawing.Point(37, 256);
             this.TxtCorreo.Name = "TxtCorreo";
             this.TxtCorreo.Size = new System.Drawing.Size(368, 27);
-            this.TxtCorreo.TabIndex = 20;
+            this.TxtCorreo.TabIndex = 44;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(33, 239);
+            this.label8.Location = new System.Drawing.Point(33, 234);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 19);
-            this.label8.TabIndex = 19;
+            this.label8.TabIndex = 43;
             this.label8.Text = "Correo:";
             // 
-            // BtnRegistroTarjeta
+            // label7
             // 
-            this.BtnRegistroTarjeta.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegistroTarjeta.Location = new System.Drawing.Point(471, 192);
-            this.BtnRegistroTarjeta.Name = "BtnRegistroTarjeta";
-            this.BtnRegistroTarjeta.Size = new System.Drawing.Size(94, 33);
-            this.BtnRegistroTarjeta.TabIndex = 21;
-            this.BtnRegistroTarjeta.Text = "Registrar";
-            this.BtnRegistroTarjeta.UseVisualStyleBackColor = true;
-            this.BtnRegistroTarjeta.Click += new System.EventHandler(this.BtnRegistroTarjeta_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(453, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(186, 26);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "Registro de tarjetas:";
             // 
-            // BtnVincular
+            // label6
             // 
-            this.BtnVincular.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVincular.Location = new System.Drawing.Point(471, 192);
-            this.BtnVincular.Name = "BtnVincular";
-            this.BtnVincular.Size = new System.Drawing.Size(94, 33);
-            this.BtnVincular.TabIndex = 22;
-            this.BtnVincular.Text = "Vincular";
-            this.BtnVincular.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(22, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(198, 26);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Registro de personas:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Location = new System.Drawing.Point(0, 343);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(736, 6);
+            this.textBox7.TabIndex = 40;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Location = new System.Drawing.Point(0, 17);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(6, 332);
+            this.textBox5.TabIndex = 38;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Location = new System.Drawing.Point(730, 24);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(6, 327);
+            this.textBox4.TabIndex = 37;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Location = new System.Drawing.Point(435, 22);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(6, 327);
+            this.textBox3.TabIndex = 36;
+            // 
+            // TxtSaldoInicial
+            // 
+            this.TxtSaldoInicial.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSaldoInicial.Location = new System.Drawing.Point(471, 141);
+            this.TxtSaldoInicial.Name = "TxtSaldoInicial";
+            this.TxtSaldoInicial.Size = new System.Drawing.Size(156, 27);
+            this.TxtSaldoInicial.TabIndex = 35;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(467, 119);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 19);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Saldo inicial:";
+            // 
+            // TxtCodigo
+            // 
+            this.TxtCodigo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCodigo.Location = new System.Drawing.Point(471, 83);
+            this.TxtCodigo.Name = "TxtCodigo";
+            this.TxtCodigo.Size = new System.Drawing.Size(235, 27);
+            this.TxtCodigo.TabIndex = 33;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(467, 60);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 19);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Código:";
+            // 
+            // BtnActualizar
+            // 
+            this.BtnActualizar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnActualizar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnActualizar.Location = new System.Drawing.Point(161, 296);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(94, 33);
+            this.BtnActualizar.TabIndex = 31;
+            this.BtnActualizar.Text = "Actualizar";
+            this.BtnActualizar.UseVisualStyleBackColor = false;
+            // 
+            // BtnRegistrar
+            // 
+            this.BtnRegistrar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnRegistrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnRegistrar.Location = new System.Drawing.Point(37, 296);
+            this.BtnRegistrar.Name = "BtnRegistrar";
+            this.BtnRegistrar.Size = new System.Drawing.Size(94, 33);
+            this.BtnRegistrar.TabIndex = 30;
+            this.BtnRegistrar.Text = "Registrar";
+            this.BtnRegistrar.UseVisualStyleBackColor = false;
+            // 
+            // TxtInstituto
+            // 
+            this.TxtInstituto.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtInstituto.Location = new System.Drawing.Point(37, 200);
+            this.TxtInstituto.Name = "TxtInstituto";
+            this.TxtInstituto.Size = new System.Drawing.Size(368, 27);
+            this.TxtInstituto.TabIndex = 29;
+            // 
+            // TxtNombre
+            // 
+            this.TxtNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNombre.Location = new System.Drawing.Point(37, 141);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(368, 27);
+            this.TxtNombre.TabIndex = 28;
+            // 
+            // TxtDocumento
+            // 
+            this.TxtDocumento.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDocumento.Location = new System.Drawing.Point(37, 83);
+            this.TxtDocumento.Name = "TxtDocumento";
+            this.TxtDocumento.Size = new System.Drawing.Size(235, 27);
+            this.TxtDocumento.TabIndex = 27;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(33, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 19);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Documento:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(33, 178);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 19);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Institución:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(33, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 19);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Nombre completo:";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmRecargas,
+            this.TsmCerrar,
+            this.TmsVinculacion,
+            this.otrosToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(736, 25);
+            this.menuStrip1.TabIndex = 47;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // TsmRecargas
+            // 
+            this.TsmRecargas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TsmRecargas.ForeColor = System.Drawing.SystemColors.Window;
+            this.TsmRecargas.Name = "TsmRecargas";
+            this.TsmRecargas.Size = new System.Drawing.Size(74, 21);
+            this.TsmRecargas.Text = "Recargas";
+            this.TsmRecargas.Click += new System.EventHandler(this.TsmRecargas_Click);
+            // 
+            // TsmCerrar
+            // 
+            this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.TsmCerrar.BackColor = System.Drawing.Color.Red;
+            this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
+            this.TsmCerrar.Name = "TsmCerrar";
+            this.TsmCerrar.Size = new System.Drawing.Size(26, 21);
+            this.TsmCerrar.Text = "X";
+            this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
+            // 
+            // TmsVinculacion
+            // 
+            this.TmsVinculacion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TmsVinculacion.ForeColor = System.Drawing.SystemColors.Window;
+            this.TmsVinculacion.Name = "TmsVinculacion";
+            this.TmsVinculacion.Size = new System.Drawing.Size(85, 21);
+            this.TmsVinculacion.Text = "Vinculación";
+            this.TmsVinculacion.Click += new System.EventHandler(this.TmsVinculacion_Click);
+            // 
+            // otrosToolStripMenuItem
+            // 
+            this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmEmpleados});
+            this.otrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
+            this.otrosToolStripMenuItem.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
+            this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
+            this.otrosToolStripMenuItem.Size = new System.Drawing.Size(28, 21);
+            // 
+            // TsmEmpleados
+            // 
+            this.TsmEmpleados.BackColor = System.Drawing.SystemColors.Control;
+            this.TsmEmpleados.Name = "TsmEmpleados";
+            this.TsmEmpleados.Size = new System.Drawing.Size(194, 22);
+            this.TsmEmpleados.Text = "Registro de empleados";
+            this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click);
             // 
             // FrmRegistroVinculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(735, 354);
+            this.ClientSize = new System.Drawing.Size(736, 348);
             this.Controls.Add(this.BtnVincular);
             this.Controls.Add(this.BtnRegistroTarjeta);
             this.Controls.Add(this.TxtCorreo);
@@ -285,7 +347,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -301,8 +362,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistroVinculos";
             this.Text = "Registro de vinculos";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,28 +375,33 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtDocumento;
-        private System.Windows.Forms.TextBox TxtNombre;
-        private System.Windows.Forms.TextBox TxtInstituto;
-        private System.Windows.Forms.Button BtnRegistrar;
-        private System.Windows.Forms.Button BtnActualizar;
-        private System.Windows.Forms.TextBox TxtCodigo;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TxtSaldoInicial;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button BtnVincular;
+        private System.Windows.Forms.Button BtnRegistroTarjeta;
         private System.Windows.Forms.TextBox TxtCorreo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button BtnRegistroTarjeta;
-        private System.Windows.Forms.Button BtnVincular;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtSaldoInicial;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox TxtCodigo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button BtnActualizar;
+        private System.Windows.Forms.Button BtnRegistrar;
+        private System.Windows.Forms.TextBox TxtInstituto;
+        private System.Windows.Forms.TextBox TxtNombre;
+        private System.Windows.Forms.TextBox TxtDocumento;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem TsmRecargas;
+        private System.Windows.Forms.ToolStripMenuItem TsmCerrar;
+        private System.Windows.Forms.ToolStripMenuItem TmsVinculacion;
+        private System.Windows.Forms.ToolStripMenuItem otrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TsmEmpleados;
     }
 }

@@ -16,5 +16,31 @@ namespace Capa_Diseño
         {
             InitializeComponent();
         }
+
+        private void TsmCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnEmpleados_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados ObjEmpleados = new FrmEmpleados();
+            ObjEmpleados.Show();
+            Hide();
+        }
+
+        private void BtnRecargas_Click(object sender, EventArgs e)
+        {
+            FrmRecargas ObjRecargas = new FrmRecargas();
+            ObjRecargas.Show();
+            Hide();
+        }
+
+        private void BtnVinculacion_Click(object sender, EventArgs e)
+        {
+            FrmRegistroVinculos ObjVinculo = new FrmRegistroVinculos();
+            ObjVinculo.Show();
+            Hide();
+        }
     }
 }

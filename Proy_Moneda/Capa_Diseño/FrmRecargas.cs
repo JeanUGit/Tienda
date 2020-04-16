@@ -21,6 +21,32 @@ namespace Capa_Diseño
         {
           
          
-                }
+        }
+
+        private void TsmEmpleados_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados ObjEmpleados = new FrmEmpleados();
+            ObjEmpleados.Show();
+            Hide();
+        }
+
+        private void TmsVinculacion_Click(object sender, EventArgs e)
+        {
+            FrmRegistroVinculos ObjVinculo = new FrmRegistroVinculos();
+            ObjVinculo.Show();
+            Hide();
+        }
+
+        private void TsmRecargas_Click(object sender, EventArgs e)
+        {
+            FrmRecargas ObjRecargas = new FrmRecargas();
+            ObjRecargas.Show();
+            Hide();
+        }
+
+        private void TsmCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
