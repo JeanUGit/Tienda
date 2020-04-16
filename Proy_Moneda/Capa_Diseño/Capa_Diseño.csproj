@@ -122,6 +122,7 @@
     <Content Include="Imagenes\menuoutline_110931.png" />
     <Content Include="Imagenes\questionmarkcircleoutline_110819.png" />
     <Content Include="Imagenes\shoppingcartoutline_110834.png" />
+    <None Include="Resources\1486564399-close_81512.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

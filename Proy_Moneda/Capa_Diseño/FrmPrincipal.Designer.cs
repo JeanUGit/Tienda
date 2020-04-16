@@ -56,11 +56,10 @@
             // TsmCerrar
             // 
             this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.TsmCerrar.BackColor = System.Drawing.Color.Red;
             this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
+            this.TsmCerrar.Image = global::Capa_Diseño.Properties.Resources._1486564399_close_81512;
             this.TsmCerrar.Name = "TsmCerrar";
-            this.TsmCerrar.Size = new System.Drawing.Size(26, 20);
-            this.TsmCerrar.Text = "X";
+            this.TsmCerrar.Size = new System.Drawing.Size(28, 20);
             this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
             // 
             // textBox2
@@ -167,6 +166,7 @@
             this.Controls.Add(this.BtnEmpleados);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

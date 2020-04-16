@@ -30,10 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.TsmRecargas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
             this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
-            this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -48,6 +45,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
+            this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,16 +74,6 @@
             this.TsmRecargas.Text = "Recargas";
             this.TsmRecargas.Click += new System.EventHandler(this.TsmRecargas_Click);
             // 
-            // TsmCerrar
-            // 
-            this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.TsmCerrar.BackColor = System.Drawing.Color.Red;
-            this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
-            this.TsmCerrar.Name = "TsmCerrar";
-            this.TsmCerrar.Size = new System.Drawing.Size(26, 21);
-            this.TsmCerrar.Text = "X";
-            this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
-            // 
             // TmsVinculacion
             // 
             this.TmsVinculacion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -92,24 +82,6 @@
             this.TmsVinculacion.Size = new System.Drawing.Size(85, 21);
             this.TmsVinculacion.Text = "Vinculación";
             this.TmsVinculacion.Click += new System.EventHandler(this.TmsVinculacion_Click);
-            // 
-            // otrosToolStripMenuItem
-            // 
-            this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmEmpleados});
-            this.otrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.otrosToolStripMenuItem.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
-            this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
-            this.otrosToolStripMenuItem.Size = new System.Drawing.Size(28, 21);
-            // 
-            // TsmEmpleados
-            // 
-            this.TsmEmpleados.BackColor = System.Drawing.SystemColors.Control;
-            this.TsmEmpleados.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TsmEmpleados.Name = "TsmEmpleados";
-            this.TsmEmpleados.Size = new System.Drawing.Size(194, 22);
-            this.TsmEmpleados.Text = "Registro de empleados";
-            this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click);
             // 
             // textBox2
             // 
@@ -247,6 +219,34 @@
             this.label1.TabIndex = 37;
             this.label1.Text = "Nombre completo:";
             // 
+            // TsmCerrar
+            // 
+            this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.TsmCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
+            this.TsmCerrar.Image = global::Capa_Diseño.Properties.Resources._1486564399_close_81512;
+            this.TsmCerrar.Name = "TsmCerrar";
+            this.TsmCerrar.Size = new System.Drawing.Size(28, 21);
+            this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
+            // 
+            // otrosToolStripMenuItem
+            // 
+            this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmEmpleados});
+            this.otrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.otrosToolStripMenuItem.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
+            this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
+            this.otrosToolStripMenuItem.Size = new System.Drawing.Size(28, 21);
+            // 
+            // TsmEmpleados
+            // 
+            this.TsmEmpleados.BackColor = System.Drawing.SystemColors.Control;
+            this.TsmEmpleados.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.TsmEmpleados.Name = "TsmEmpleados";
+            this.TsmEmpleados.Size = new System.Drawing.Size(194, 22);
+            this.TsmEmpleados.Text = "Registro de empleados";
+            this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click);
+            // 
             // FrmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,6 +270,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEmpleados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de empleados";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

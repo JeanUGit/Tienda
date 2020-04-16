@@ -301,11 +301,11 @@
             // TsmCerrar
             // 
             this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.TsmCerrar.BackColor = System.Drawing.Color.Red;
+            this.TsmCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
+            this.TsmCerrar.Image = global::Capa_Diseño.Properties.Resources._1486564399_close_81512;
             this.TsmCerrar.Name = "TsmCerrar";
-            this.TsmCerrar.Size = new System.Drawing.Size(26, 21);
-            this.TsmCerrar.Text = "X";
+            this.TsmCerrar.Size = new System.Drawing.Size(28, 21);
             this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
             // 
             // TmsVinculacion
@@ -365,6 +365,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistroVinculos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de vinculos";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
