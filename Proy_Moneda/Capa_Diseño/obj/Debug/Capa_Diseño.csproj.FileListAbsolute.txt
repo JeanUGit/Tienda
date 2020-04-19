@@ -44,3 +44,4 @@ D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.Genera
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.CopyComplete
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.exe
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.pdb
+C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmLogin.resources

@@ -52,6 +52,12 @@
     <Compile Include="FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -115,6 +124,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Imagenes\3643762-find-glass-magnifying-search-zoom_113420.png" />
+    <None Include="Resources\key_icon_124940.ico" />
+    <None Include="Resources\lock_closed_icon_124921.ico" />
     <None Include="Imagenes\account_switch_outline_icon_140036.png" />
     <Content Include="Imagenes\alertcircleoutline_110926.png" />
     <Content Include="Imagenes\arrowheaddownoutline_110820.png" />
