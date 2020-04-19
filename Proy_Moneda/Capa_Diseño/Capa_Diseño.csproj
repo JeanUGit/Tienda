@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\Nomina Empleado\Otro PROGRAMA\Software\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +56,12 @@
     <Compile Include="FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +73,12 @@
     </Compile>
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRecargas.cs">
       <SubType>Form</SubType>
@@ -76,10 +92,19 @@
     <Compile Include="FrmRegistroVinculos.Designer.cs">
       <DependentUpon>FrmRegistroVinculos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVenta.Designer.cs">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -87,11 +112,17 @@
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRecargas.resx">
       <DependentUpon>FrmRecargas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroVinculos.resx">
       <DependentUpon>FrmRegistroVinculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVenta.resx">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,6 +154,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagenes\-autorenew_90718.png" />
+    <Content Include="Imagenes\1486564399-close_81512.png" />
+    <Content Include="Imagenes\1492790860-8check_84164.png" />
     <Content Include="Imagenes\3643762-find-glass-magnifying-search-zoom_113420.png" />
     <None Include="Resources\key_icon_124940.ico" />
     <None Include="Resources\lock_closed_icon_124921.ico" />
@@ -130,7 +164,9 @@
     <Content Include="Imagenes\alertcircleoutline_110926.png" />
     <Content Include="Imagenes\arrowheaddownoutline_110820.png" />
     <Content Include="Imagenes\backspaceoutline_110915.png" />
+    <Content Include="Imagenes\broom_icon_136857.png" />
     <Content Include="Imagenes\checkmarkoutline_110785.png" />
+    <Content Include="Imagenes\iconfinder-broom-clean-service-labor-website-4622511_122412.png" />
     <Content Include="Imagenes\menuoutline_110931.png" />
     <None Include="Imagenes\money-pig_icon-icons.com_56372.png" />
     <Content Include="Imagenes\questionmarkcircleoutline_110819.png" />

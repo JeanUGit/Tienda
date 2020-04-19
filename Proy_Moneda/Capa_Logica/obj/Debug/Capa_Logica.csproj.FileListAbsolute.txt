@@ -16,3 +16,11 @@ C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Lo
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csproj.CopyComplete
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.dll
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\bin\Debug\Capa_Logica.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\bin\Debug\Capa_Logica.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\bin\Debug\Capa_Conexion.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\bin\Debug\Capa_Conexion.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csprojAssemblyReference.cache
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csproj.CopyComplete
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.pdb

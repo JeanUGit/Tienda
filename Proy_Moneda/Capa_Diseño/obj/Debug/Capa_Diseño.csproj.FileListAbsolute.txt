@@ -45,3 +45,23 @@ D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.CopyCo
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.exe
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.pdb
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmLogin.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Diseño.exe.config
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Diseño.exe
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Diseño.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Logica.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\MetroFramework.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Logica.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csprojAssemblyReference.cache
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmEmpleados.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmInventario.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmLogin.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmPrincipal.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmProductos.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmRecargas.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmRegistroVinculos.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.Properties.Resources.resources
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.GenerateResource.cache
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.CopyComplete
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.exe
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmVenta.resources
