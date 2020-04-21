@@ -68,11 +68,11 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPrincipal.cs">
+    <Compile Include="frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmProductos.cs">
       <SubType>Form</SubType>
@@ -109,8 +109,8 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
@@ -158,6 +158,9 @@
     <Content Include="Imagenes\1486564399-close_81512.png" />
     <Content Include="Imagenes\1492790860-8check_84164.png" />
     <Content Include="Imagenes\3643762-find-glass-magnifying-search-zoom_113420.png" />
+    <None Include="Resources\Person-add_icon-icons.com_51973.png" />
+    <None Include="Resources\3925400-bank-budget-money-stocks-icon_111538.png" />
+    <None Include="Resources\hombre.png" />
     <None Include="Resources\key_icon_124940.ico" />
     <None Include="Resources\lock_closed_icon_124921.ico" />
     <None Include="Imagenes\account_switch_outline_icon_140036.png" />
