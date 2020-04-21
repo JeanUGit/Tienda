@@ -30,10 +30,10 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.TsmRecargas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
             this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
             this.TxtCorreoEmpleado = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,9 +45,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
-            this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsProductos = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsInventario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,8 @@
             this.TsmRecargas,
             this.TsmCerrar,
             this.TmsVinculacion,
+            this.TmsVentas,
+            this.TmsProductos,
             this.otrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -74,6 +76,16 @@
             this.TsmRecargas.Text = "Recargas";
             this.TsmRecargas.Click += new System.EventHandler(this.TsmRecargas_Click);
             // 
+            // TsmCerrar
+            // 
+            this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.TsmCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
+            this.TsmCerrar.Image = global::Capa_Diseño.Properties.Resources._1486564399_close_81512;
+            this.TsmCerrar.Name = "TsmCerrar";
+            this.TsmCerrar.Size = new System.Drawing.Size(28, 21);
+            this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
+            // 
             // TmsVinculacion
             // 
             this.TmsVinculacion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,35 +95,24 @@
             this.TmsVinculacion.Text = "Vinculación";
             this.TmsVinculacion.Click += new System.EventHandler(this.TmsVinculacion_Click);
             // 
-            // textBox2
+            // otrosToolStripMenuItem
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(5, 366);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(416, 6);
-            this.textBox2.TabIndex = 51;
+            this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmEmpleados,
+            this.TmsInventario});
+            this.otrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.otrosToolStripMenuItem.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
+            this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
+            this.otrosToolStripMenuItem.Size = new System.Drawing.Size(28, 21);
             // 
-            // textBox1
+            // TsmEmpleados
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(0, 17);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(6, 366);
-            this.textBox1.TabIndex = 49;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(420, 17);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(6, 366);
-            this.textBox3.TabIndex = 48;
+            this.TsmEmpleados.BackColor = System.Drawing.SystemColors.Control;
+            this.TsmEmpleados.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.TsmEmpleados.Name = "TsmEmpleados";
+            this.TsmEmpleados.Size = new System.Drawing.Size(194, 22);
+            this.TsmEmpleados.Text = "Registro de empleados";
+            this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click);
             // 
             // TxtCorreoEmpleado
             // 
@@ -219,33 +220,28 @@
             this.label1.TabIndex = 37;
             this.label1.Text = "Nombre completo:";
             // 
-            // TsmCerrar
+            // TmsVentas
             // 
-            this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.TsmCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
-            this.TsmCerrar.Image = global::Capa_Diseño.Properties.Resources._1486564399_close_81512;
-            this.TsmCerrar.Name = "TsmCerrar";
-            this.TsmCerrar.Size = new System.Drawing.Size(28, 21);
-            this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
+            this.TmsVentas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TmsVentas.Name = "TmsVentas";
+            this.TmsVentas.Size = new System.Drawing.Size(53, 21);
+            this.TmsVentas.Text = "Ventas";
+            this.TmsVentas.Click += new System.EventHandler(this.TmsVentas_Click);
             // 
-            // otrosToolStripMenuItem
+            // TmsProductos
             // 
-            this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmEmpleados});
-            this.otrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.otrosToolStripMenuItem.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
-            this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
-            this.otrosToolStripMenuItem.Size = new System.Drawing.Size(28, 21);
+            this.TmsProductos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TmsProductos.Name = "TmsProductos";
+            this.TmsProductos.Size = new System.Drawing.Size(73, 21);
+            this.TmsProductos.Text = "Productos";
+            this.TmsProductos.Click += new System.EventHandler(this.TmsProductos_Click);
             // 
-            // TsmEmpleados
+            // TmsInventario
             // 
-            this.TsmEmpleados.BackColor = System.Drawing.SystemColors.Control;
-            this.TsmEmpleados.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TsmEmpleados.Name = "TsmEmpleados";
-            this.TsmEmpleados.Size = new System.Drawing.Size(194, 22);
-            this.TsmEmpleados.Text = "Registro de empleados";
-            this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click);
+            this.TmsInventario.Name = "TmsInventario";
+            this.TmsInventario.Size = new System.Drawing.Size(194, 22);
+            this.TmsInventario.Text = "Inventario";
+            this.TmsInventario.Click += new System.EventHandler(this.TmsInventario_Click);
             // 
             // FrmEmpleados
             // 
@@ -254,9 +250,6 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(426, 372);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.TxtCorreoEmpleado);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
@@ -285,9 +278,6 @@
         private System.Windows.Forms.ToolStripMenuItem TsmRecargas;
         private System.Windows.Forms.ToolStripMenuItem TsmCerrar;
         private System.Windows.Forms.ToolStripMenuItem TmsVinculacion;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox TxtCorreoEmpleado;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
@@ -301,5 +291,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem otrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem TsmEmpleados;
+        private System.Windows.Forms.ToolStripMenuItem TmsVentas;
+        private System.Windows.Forms.ToolStripMenuItem TmsProductos;
+        private System.Windows.Forms.ToolStripMenuItem TmsInventario;
     }
 }

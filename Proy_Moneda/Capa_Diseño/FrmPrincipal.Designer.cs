@@ -100,9 +100,9 @@
             this.button6.BackColor = System.Drawing.Color.White;
             this.button6.BackgroundImage = global::Capa_Diseño.Properties.Resources.account_switch_outline_icon_140036;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(550, 71);
+            this.button6.Location = new System.Drawing.Point(425, 71);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(176, 170);
+            this.button6.Size = new System.Drawing.Size(147, 129);
             this.button6.TabIndex = 45;
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -112,9 +112,9 @@
             this.BtnRecargas.BackColor = System.Drawing.Color.White;
             this.BtnRecargas.BackgroundImage = global::Capa_Diseño.Properties.Resources.money_pig_icon_icons_com_56372;
             this.BtnRecargas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnRecargas.Location = new System.Drawing.Point(313, 71);
+            this.BtnRecargas.Location = new System.Drawing.Point(235, 71);
             this.BtnRecargas.Name = "BtnRecargas";
-            this.BtnRecargas.Size = new System.Drawing.Size(185, 170);
+            this.BtnRecargas.Size = new System.Drawing.Size(147, 129);
             this.BtnRecargas.TabIndex = 41;
             this.BtnRecargas.UseVisualStyleBackColor = false;
             this.BtnRecargas.Click += new System.EventHandler(this.BtnRecargas_Click);
@@ -124,9 +124,9 @@
             this.BtnEmpleados.BackColor = System.Drawing.Color.White;
             this.BtnEmpleados.BackgroundImage = global::Capa_Diseño.Properties.Resources.registro;
             this.BtnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnEmpleados.Location = new System.Drawing.Point(71, 71);
+            this.BtnEmpleados.Location = new System.Drawing.Point(48, 71);
             this.BtnEmpleados.Name = "BtnEmpleados";
-            this.BtnEmpleados.Size = new System.Drawing.Size(191, 170);
+            this.BtnEmpleados.Size = new System.Drawing.Size(147, 129);
             this.BtnEmpleados.TabIndex = 40;
             this.BtnEmpleados.UseVisualStyleBackColor = false;
             this.BtnEmpleados.Click += new System.EventHandler(this.BtnEmpleados_Click);
@@ -137,7 +137,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(90, 242);
+            this.label1.Location = new System.Drawing.Point(44, 203);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 19);
             this.label1.TabIndex = 51;
@@ -147,21 +147,21 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox4.Location = new System.Drawing.Point(62, 61);
+            this.textBox4.Location = new System.Drawing.Point(39, 61);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(210, 209);
+            this.textBox4.Size = new System.Drawing.Size(166, 180);
             this.textBox4.TabIndex = 52;
             // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox5.Location = new System.Drawing.Point(300, 61);
+            this.textBox5.Location = new System.Drawing.Point(225, 61);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(210, 209);
+            this.textBox5.Size = new System.Drawing.Size(166, 180);
             this.textBox5.TabIndex = 53;
             // 
             // label2
@@ -170,7 +170,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(371, 242);
+            this.label2.Location = new System.Drawing.Point(277, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 19);
             this.label2.TabIndex = 54;
@@ -183,7 +183,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(600, 242);
+            this.label3.Location = new System.Drawing.Point(458, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 19);
             this.label3.TabIndex = 55;
@@ -193,11 +193,11 @@
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox6.Location = new System.Drawing.Point(541, 61);
+            this.textBox6.Location = new System.Drawing.Point(416, 61);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(196, 209);
+            this.textBox6.Size = new System.Drawing.Size(166, 180);
             this.textBox6.TabIndex = 56;
             // 
             // FrmPrincipal
