@@ -40,7 +40,32 @@ namespace Capa_Diseño
 
         private void TsmCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("¿Desea Cerrar La Pagina?", "Pagina de Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void TmsVentas_Click(object sender, EventArgs e)
+        {
+            FrmVenta ObjVenta = new FrmVenta();
+            ObjVenta.Show();
+            Hide();
+        }
+
+        private void TmsProductos_Click(object sender, EventArgs e)
+        {
+            FrmProductos ObjProductos = new FrmProductos();
+            ObjProductos.Show();
+            Hide();
+        }
+
+        private void TmsInventario_Click(object sender, EventArgs e)
+        {
+            FrmInventario ObjInventario = new FrmInventario();
+            ObjInventario.Show();
+            Hide();
         }
     }
 }

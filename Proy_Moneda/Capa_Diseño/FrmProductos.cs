@@ -19,15 +19,58 @@ namespace Capa_Diseño
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Desea Cerrar La Pagina?","Pagina de Cerrar Sesión",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes) {
-                this.Close();
-            }
+            
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void TmsRecargas_Click(object sender, EventArgs e)
         {
+            FrmRecargas ObjRecargas = new FrmRecargas();
+            ObjRecargas.Show();
+            Hide();
+        }
 
+        private void TmsVinculacion_Click(object sender, EventArgs e)
+        {
+            FrmRegistroVinculos ObjVinculo = new FrmRegistroVinculos();
+            ObjVinculo.Show();
+            Hide();
+        }
+
+        private void TmsVentas_Click(object sender, EventArgs e)
+        {
+            FrmVenta ObjVenta = new FrmVenta();
+            ObjVenta.Show();
+            Hide();
+        }
+
+        private void TmsProductos_Click(object sender, EventArgs e)
+        {
+            FrmProductos ObjProductos = new FrmProductos();
+            ObjProductos.Show();
+            Hide();
+        }
+
+        private void TmsRegistroEmpleados_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados ObjEmpleados = new FrmEmpleados();
+            ObjEmpleados.Show();
+            Hide();
+        }
+
+        private void TmsInventario_Click(object sender, EventArgs e)
+        {
+            FrmInventario ObjInventario = new FrmInventario();
+            ObjInventario.Show();
+            Hide();
+        }
+
+        private void xToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Desea Cerrar La Pagina?", "Pagina de Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

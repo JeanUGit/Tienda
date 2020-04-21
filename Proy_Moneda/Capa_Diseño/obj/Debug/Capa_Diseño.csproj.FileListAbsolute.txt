@@ -65,3 +65,6 @@ C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Dise
 C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.exe
 C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.pdb
 C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmVenta.resources
+C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmInventario.resources
+C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmProductos.resources
+C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmVenta.resources

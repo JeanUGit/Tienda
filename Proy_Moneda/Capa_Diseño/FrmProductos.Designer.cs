@@ -31,6 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.xToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsRecargas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsProductos = new System.Windows.Forms.ToolStripMenuItem();
+            this.lToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsRegistroEmpleados = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsInventario = new System.Windows.Forms.ToolStripMenuItem();
             this.txtCantidadActual = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtPrecioCosto = new System.Windows.Forms.TextBox();
@@ -52,13 +59,17 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xToolStripMenuItem});
+            this.xToolStripMenuItem,
+            this.TmsRecargas,
+            this.TmsVinculacion,
+            this.TmsVentas,
+            this.TmsProductos,
+            this.lToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(462, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // xToolStripMenuItem
             // 
@@ -68,6 +79,62 @@
             this.xToolStripMenuItem.Name = "xToolStripMenuItem";
             this.xToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
             this.xToolStripMenuItem.Text = "x";
+            this.xToolStripMenuItem.Click += new System.EventHandler(this.xToolStripMenuItem_Click);
+            // 
+            // TmsRecargas
+            // 
+            this.TmsRecargas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TmsRecargas.Name = "TmsRecargas";
+            this.TmsRecargas.Size = new System.Drawing.Size(66, 20);
+            this.TmsRecargas.Text = "Recargas";
+            this.TmsRecargas.Click += new System.EventHandler(this.TmsRecargas_Click);
+            // 
+            // TmsVinculacion
+            // 
+            this.TmsVinculacion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TmsVinculacion.Name = "TmsVinculacion";
+            this.TmsVinculacion.Size = new System.Drawing.Size(81, 20);
+            this.TmsVinculacion.Text = "Vinculación";
+            this.TmsVinculacion.Click += new System.EventHandler(this.TmsVinculacion_Click);
+            // 
+            // TmsVentas
+            // 
+            this.TmsVentas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TmsVentas.Name = "TmsVentas";
+            this.TmsVentas.Size = new System.Drawing.Size(53, 20);
+            this.TmsVentas.Text = "Ventas";
+            this.TmsVentas.Click += new System.EventHandler(this.TmsVentas_Click);
+            // 
+            // TmsProductos
+            // 
+            this.TmsProductos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TmsProductos.Name = "TmsProductos";
+            this.TmsProductos.Size = new System.Drawing.Size(73, 20);
+            this.TmsProductos.Text = "Productos";
+            this.TmsProductos.Click += new System.EventHandler(this.TmsProductos_Click);
+            // 
+            // lToolStripMenuItem
+            // 
+            this.lToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TmsRegistroEmpleados,
+            this.TmsInventario});
+            this.lToolStripMenuItem.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
+            this.lToolStripMenuItem.Name = "lToolStripMenuItem";
+            this.lToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
+            // 
+            // TmsRegistroEmpleados
+            // 
+            this.TmsRegistroEmpleados.Name = "TmsRegistroEmpleados";
+            this.TmsRegistroEmpleados.Size = new System.Drawing.Size(178, 22);
+            this.TmsRegistroEmpleados.Text = "Registro empleados";
+            this.TmsRegistroEmpleados.Click += new System.EventHandler(this.TmsRegistroEmpleados_Click);
+            // 
+            // TmsInventario
+            // 
+            this.TmsInventario.Name = "TmsInventario";
+            this.TmsInventario.Size = new System.Drawing.Size(178, 22);
+            this.TmsInventario.Text = "Inventario";
+            this.TmsInventario.Click += new System.EventHandler(this.TmsInventario_Click);
             // 
             // txtCantidadActual
             // 
@@ -208,7 +275,6 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label1
             // 
@@ -283,5 +349,12 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem TmsRecargas;
+        private System.Windows.Forms.ToolStripMenuItem TmsVinculacion;
+        private System.Windows.Forms.ToolStripMenuItem TmsVentas;
+        private System.Windows.Forms.ToolStripMenuItem TmsProductos;
+        private System.Windows.Forms.ToolStripMenuItem lToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TmsRegistroEmpleados;
+        private System.Windows.Forms.ToolStripMenuItem TmsInventario;
     }
 }

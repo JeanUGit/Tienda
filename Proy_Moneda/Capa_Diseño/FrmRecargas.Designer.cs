@@ -35,10 +35,6 @@
             this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
             this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnRecargar = new System.Windows.Forms.Button();
             this.LblPersona = new System.Windows.Forms.Label();
@@ -49,6 +45,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.TmsVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsInventario = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsProductos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +58,7 @@
             this.TsmRecargas,
             this.TsmCerrar,
             this.TmsVinculacion,
+            this.TmsVentas,
             this.otrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -97,7 +97,9 @@
             // otrosToolStripMenuItem
             // 
             this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmEmpleados});
+            this.TsmEmpleados,
+            this.TmsInventario,
+            this.TmsProductos});
             this.otrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.otrosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("otrosToolStripMenuItem.Image")));
             this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
@@ -109,46 +111,6 @@
             this.TsmEmpleados.Size = new System.Drawing.Size(194, 22);
             this.TsmEmpleados.Text = "Registro de empleados";
             this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click_1);
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(1, 261);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(371, 6);
-            this.textBox4.TabIndex = 43;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(1, 392);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(371, 6);
-            this.textBox2.TabIndex = 42;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(0, 8);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(6, 410);
-            this.textBox1.TabIndex = 40;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(366, 9);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(6, 410);
-            this.textBox3.TabIndex = 39;
             // 
             // label2
             // 
@@ -248,6 +210,28 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Código:";
             // 
+            // TmsVentas
+            // 
+            this.TmsVentas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TmsVentas.Name = "TmsVentas";
+            this.TmsVentas.Size = new System.Drawing.Size(53, 21);
+            this.TmsVentas.Text = "Ventas";
+            this.TmsVentas.Click += new System.EventHandler(this.TmsVentas_Click);
+            // 
+            // TmsInventario
+            // 
+            this.TmsInventario.Name = "TmsInventario";
+            this.TmsInventario.Size = new System.Drawing.Size(194, 22);
+            this.TmsInventario.Text = "Inventario";
+            this.TmsInventario.Click += new System.EventHandler(this.TmsInventario_Click);
+            // 
+            // TmsProductos
+            // 
+            this.TmsProductos.Name = "TmsProductos";
+            this.TmsProductos.Size = new System.Drawing.Size(194, 22);
+            this.TmsProductos.Text = "Productos";
+            this.TmsProductos.Click += new System.EventHandler(this.TmsProductos_Click);
+            // 
             // FrmRecargas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,10 +239,6 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(372, 398);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnRecargar);
             this.Controls.Add(this.LblPersona);
@@ -287,10 +267,6 @@
         private System.Windows.Forms.ToolStripMenuItem TsmRecargas;
         private System.Windows.Forms.ToolStripMenuItem TsmCerrar;
         private System.Windows.Forms.ToolStripMenuItem TmsVinculacion;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnRecargar;
         private System.Windows.Forms.Label LblPersona;
@@ -303,5 +279,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolStripMenuItem otrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem TsmEmpleados;
+        private System.Windows.Forms.ToolStripMenuItem TmsVentas;
+        private System.Windows.Forms.ToolStripMenuItem TmsInventario;
+        private System.Windows.Forms.ToolStripMenuItem TmsProductos;
     }
 }

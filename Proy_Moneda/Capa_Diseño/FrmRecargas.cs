@@ -19,12 +19,8 @@ namespace Capa_Diseño
 
         private void FrmRecargas_Load(object sender, EventArgs e)
         {
-          
-         
-        }
-
-        
-
+               
+        }       
         private void TmsVinculacion_Click(object sender, EventArgs e)
         {
             FrmRegistroVinculos ObjVinculo = new FrmRegistroVinculos();
@@ -41,13 +37,38 @@ namespace Capa_Diseño
 
         private void TsmCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("¿Desea Cerrar La Pagina?", "Pagina de Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void TsmEmpleados_Click_1(object sender, EventArgs e)
         {
             FrmEmpleados ObjEmpleados = new FrmEmpleados();
             ObjEmpleados.Show();
+            Hide();
+        }
+
+        private void TmsVentas_Click(object sender, EventArgs e)
+        {
+            FrmVenta ObjVenta = new FrmVenta();
+            ObjVenta.Show();
+            Hide();
+        }
+
+        private void TmsInventario_Click(object sender, EventArgs e)
+        {
+            FrmInventario ObjInventario = new FrmInventario();
+            ObjInventario.Show();
+            Hide();
+        }
+
+        private void TmsProductos_Click(object sender, EventArgs e)
+        {
+            FrmProductos ObjProductos = new FrmProductos();
+            ObjProductos.Show();
             Hide();
         }
     }
