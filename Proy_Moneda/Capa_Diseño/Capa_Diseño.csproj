@@ -68,11 +68,11 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMenuPrincipal.cs">
+    <Compile Include="frmMenu_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenuPrincipal.Designer.cs">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    <Compile Include="frmMenu_Principal.Designer.cs">
+      <DependentUpon>frmMenu_Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmProductos.cs">
       <SubType>Form</SubType>
@@ -109,8 +109,8 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMenuPrincipal.resx">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenu_Principal.resx">
+      <DependentUpon>frmMenu_Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
@@ -158,20 +158,20 @@
     <Content Include="Imagenes\1486564399-close_81512.png" />
     <Content Include="Imagenes\1492790860-8check_84164.png" />
     <Content Include="Imagenes\3643762-find-glass-magnifying-search-zoom_113420.png" />
-    <None Include="Resources\Person-add_icon-icons.com_51973.png" />
-    <None Include="Resources\3925400-bank-budget-money-stocks-icon_111538.png" />
-    <None Include="Resources\hombre.png" />
     <None Include="Resources\key_icon_124940.ico" />
     <None Include="Resources\lock_closed_icon_124921.ico" />
     <None Include="Imagenes\account_switch_outline_icon_140036.png" />
+    <Content Include="Imagenes\3925400-bank-budget-money-stocks-icon_111538.png" />
     <Content Include="Imagenes\alertcircleoutline_110926.png" />
     <Content Include="Imagenes\arrowheaddownoutline_110820.png" />
     <Content Include="Imagenes\backspaceoutline_110915.png" />
     <Content Include="Imagenes\broom_icon_136857.png" />
     <Content Include="Imagenes\checkmarkoutline_110785.png" />
+    <Content Include="Imagenes\hombre.png" />
     <Content Include="Imagenes\iconfinder-broom-clean-service-labor-website-4622511_122412.png" />
     <Content Include="Imagenes\menuoutline_110931.png" />
     <None Include="Imagenes\money-pig_icon-icons.com_56372.png" />
+    <Content Include="Imagenes\Person-add_icon-icons.com_51973.png" />
     <Content Include="Imagenes\questionmarkcircleoutline_110819.png" />
     <None Include="Imagenes\registro.png" />
     <Content Include="Imagenes\shoppingcartoutline_110834.png" />

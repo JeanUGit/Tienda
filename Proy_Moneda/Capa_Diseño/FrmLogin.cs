@@ -24,7 +24,7 @@ namespace Capa_Diseño
 
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
-            FrmPrincipal ObjPrincipal = new FrmPrincipal();
+            frmMenu_Principal ObjPrincipal = new frmMenu_Principal();
             ObjPrincipal.Show();
             Hide();
         }

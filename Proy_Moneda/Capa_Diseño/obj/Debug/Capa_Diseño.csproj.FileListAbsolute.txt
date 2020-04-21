@@ -36,7 +36,6 @@ D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Logica.dll
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Logica.pdb
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csprojAssemblyReference.cache
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmEmpleados.resources
-D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmPrincipal.resources
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmRecargas.resources
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmRegistroVinculos.resources
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.Properties.Resources.resources
@@ -68,3 +67,8 @@ C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Dise
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmInventario.resources
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmProductos.resources
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmVenta.resources
+D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmInventario.resources
+D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmLogin.resources
+D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.frmMenu_Principal.resources
+D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmProductos.resources
+D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmVenta.resources
