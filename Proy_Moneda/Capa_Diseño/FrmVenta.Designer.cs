@@ -132,7 +132,7 @@
             this.btnSalidaCajero.ForeColor = System.Drawing.Color.Black;
             this.btnSalidaCajero.Image = ((System.Drawing.Image)(resources.GetObject("btnSalidaCajero.Image")));
             this.btnSalidaCajero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalidaCajero.Location = new System.Drawing.Point(459, 76);
+            this.btnSalidaCajero.Location = new System.Drawing.Point(499, 91);
             this.btnSalidaCajero.Name = "btnSalidaCajero";
             this.btnSalidaCajero.Size = new System.Drawing.Size(160, 30);
             this.btnSalidaCajero.TabIndex = 14;
@@ -152,7 +152,7 @@
             this.btnAgregarCajero.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarCajero.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCajero.Image")));
             this.btnAgregarCajero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarCajero.Location = new System.Drawing.Point(282, 76);
+            this.btnAgregarCajero.Location = new System.Drawing.Point(488, 45);
             this.btnAgregarCajero.Name = "btnAgregarCajero";
             this.btnAgregarCajero.Size = new System.Drawing.Size(171, 30);
             this.btnAgregarCajero.TabIndex = 13;
@@ -173,7 +173,7 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.Black;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(399, 40);
+            this.btnBuscar.Location = new System.Drawing.Point(353, 45);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(100, 30);
             this.btnBuscar.TabIndex = 12;
@@ -260,7 +260,7 @@
             // 
             this.txtCodigoProducto.Location = new System.Drawing.Point(161, 52);
             this.txtCodigoProducto.Name = "txtCodigoProducto";
-            this.txtCodigoProducto.Size = new System.Drawing.Size(73, 20);
+            this.txtCodigoProducto.Size = new System.Drawing.Size(181, 20);
             this.txtCodigoProducto.TabIndex = 5;
             // 
             // label1
@@ -352,14 +352,14 @@
             // registroEmpleadosToolStripMenuItem
             // 
             this.registroEmpleadosToolStripMenuItem.Name = "registroEmpleadosToolStripMenuItem";
-            this.registroEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.registroEmpleadosToolStripMenuItem.Text = "Registro empleados";
             this.registroEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.registroEmpleadosToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
             // 
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.inventarioToolStripMenuItem.Text = "Inventario";
             this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
             // 

@@ -64,6 +64,6 @@ namespace Capa_Diseño
         {fnt_frmPn(new FrmRecargas());}
 
         private void btnVinculaciones_Click(object sender, EventArgs e)
-        {fnt_frmPn(new FrmRegistroVinculos()); }
+        {fnt_frmPn(new FrmRegistroVinculos());}
     }
 }

@@ -33,8 +33,11 @@
             this.TsmRecargas = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
             this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsInventario = new System.Windows.Forms.ToolStripMenuItem();
+            this.TmsProductos = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnRecargar = new System.Windows.Forms.Button();
             this.LblPersona = new System.Windows.Forms.Label();
@@ -45,9 +48,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.TmsVentas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsInventario = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsProductos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,6 +94,14 @@
             this.TmsVinculacion.Text = "Vinculación";
             this.TmsVinculacion.Click += new System.EventHandler(this.TmsVinculacion_Click);
             // 
+            // TmsVentas
+            // 
+            this.TmsVentas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TmsVentas.Name = "TmsVentas";
+            this.TmsVentas.Size = new System.Drawing.Size(53, 21);
+            this.TmsVentas.Text = "Ventas";
+            this.TmsVentas.Click += new System.EventHandler(this.TmsVentas_Click);
+            // 
             // otrosToolStripMenuItem
             // 
             this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -112,6 +120,20 @@
             this.TsmEmpleados.Text = "Registro de empleados";
             this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click_1);
             // 
+            // TmsInventario
+            // 
+            this.TmsInventario.Name = "TmsInventario";
+            this.TmsInventario.Size = new System.Drawing.Size(194, 22);
+            this.TmsInventario.Text = "Inventario";
+            this.TmsInventario.Click += new System.EventHandler(this.TmsInventario_Click);
+            // 
+            // TmsProductos
+            // 
+            this.TmsProductos.Name = "TmsProductos";
+            this.TmsProductos.Size = new System.Drawing.Size(194, 22);
+            this.TmsProductos.Text = "Productos";
+            this.TmsProductos.Click += new System.EventHandler(this.TmsProductos_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -127,6 +149,7 @@
             this.BtnRecargar.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BtnRecargar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRecargar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnRecargar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnRecargar.Location = new System.Drawing.Point(31, 339);
             this.BtnRecargar.Name = "BtnRecargar";
             this.BtnRecargar.Size = new System.Drawing.Size(94, 33);
@@ -209,28 +232,6 @@
             this.label4.Size = new System.Drawing.Size(58, 19);
             this.label4.TabIndex = 29;
             this.label4.Text = "Código:";
-            // 
-            // TmsVentas
-            // 
-            this.TmsVentas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TmsVentas.Name = "TmsVentas";
-            this.TmsVentas.Size = new System.Drawing.Size(53, 21);
-            this.TmsVentas.Text = "Ventas";
-            this.TmsVentas.Click += new System.EventHandler(this.TmsVentas_Click);
-            // 
-            // TmsInventario
-            // 
-            this.TmsInventario.Name = "TmsInventario";
-            this.TmsInventario.Size = new System.Drawing.Size(194, 22);
-            this.TmsInventario.Text = "Inventario";
-            this.TmsInventario.Click += new System.EventHandler(this.TmsInventario_Click);
-            // 
-            // TmsProductos
-            // 
-            this.TmsProductos.Name = "TmsProductos";
-            this.TmsProductos.Size = new System.Drawing.Size(194, 22);
-            this.TmsProductos.Text = "Productos";
-            this.TmsProductos.Click += new System.EventHandler(this.TmsProductos_Click);
             // 
             // FrmRecargas
             // 
