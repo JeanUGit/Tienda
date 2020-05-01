@@ -42,20 +42,9 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.txtCodigoProducto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.xToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.recargasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vinculaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelFondo.SuspendLayout();
             this.tabcontrol.SuspendLayout();
             this.metroTabControl.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelFondo
@@ -71,7 +60,6 @@
             this.panelFondo.Controls.Add(this.tabcontrol);
             this.panelFondo.Controls.Add(this.txtCodigoProducto);
             this.panelFondo.Controls.Add(this.label1);
-            this.panelFondo.Controls.Add(this.menuStrip1);
             this.panelFondo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFondo.Location = new System.Drawing.Point(0, 0);
             this.panelFondo.Name = "panelFondo";
@@ -80,7 +68,6 @@
             // 
             // btnQuitarTicket
             // 
-            this.btnQuitarTicket.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnQuitarTicket.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnQuitarTicket.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnQuitarTicket.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -101,7 +88,6 @@
             // 
             // btnNuevoTicket
             // 
-            this.btnNuevoTicket.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnNuevoTicket.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnNuevoTicket.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnNuevoTicket.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -122,7 +108,6 @@
             // 
             // btnSalidaCajero
             // 
-            this.btnSalidaCajero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalidaCajero.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSalidaCajero.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnSalidaCajero.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -142,7 +127,6 @@
             // 
             // btnAgregarCajero
             // 
-            this.btnAgregarCajero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregarCajero.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAgregarCajero.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnAgregarCajero.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -163,7 +147,6 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuscar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -183,7 +166,6 @@
             // 
             // btnCobrarVenta
             // 
-            this.btnCobrarVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCobrarVenta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCobrarVenta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnCobrarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -203,7 +185,6 @@
             // 
             // lblTotal
             // 
-            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTotal.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.Black;
@@ -216,9 +197,6 @@
             // 
             // tabcontrol
             // 
-            this.tabcontrol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabcontrol.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabcontrol.Controls.Add(this.metroTabControl);
             this.tabcontrol.Location = new System.Drawing.Point(9, 127);
@@ -274,95 +252,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Codigo del Producto:";
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xToolStripMenuItem,
-            this.xToolStripMenuItem1,
-            this.recargasToolStripMenuItem,
-            this.vinculaciónToolStripMenuItem,
-            this.ventasToolStripMenuItem,
-            this.productosToolStripMenuItem,
-            this.toolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(673, 24);
-            this.menuStrip1.TabIndex = 17;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // xToolStripMenuItem
-            // 
-            this.xToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.xToolStripMenuItem.Name = "xToolStripMenuItem";
-            this.xToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.xToolStripMenuItem.Text = "FECHA";
-            // 
-            // xToolStripMenuItem1
-            // 
-            this.xToolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.xToolStripMenuItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.xToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("xToolStripMenuItem1.Image")));
-            this.xToolStripMenuItem1.Name = "xToolStripMenuItem1";
-            this.xToolStripMenuItem1.Size = new System.Drawing.Size(28, 20);
-            this.xToolStripMenuItem1.Text = "x";
-            this.xToolStripMenuItem1.Click += new System.EventHandler(this.xToolStripMenuItem1_Click);
-            // 
-            // recargasToolStripMenuItem
-            // 
-            this.recargasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.recargasToolStripMenuItem.Name = "recargasToolStripMenuItem";
-            this.recargasToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.recargasToolStripMenuItem.Text = "Recargas";
-            this.recargasToolStripMenuItem.Click += new System.EventHandler(this.recargasToolStripMenuItem_Click);
-            // 
-            // vinculaciónToolStripMenuItem
-            // 
-            this.vinculaciónToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.vinculaciónToolStripMenuItem.Name = "vinculaciónToolStripMenuItem";
-            this.vinculaciónToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.vinculaciónToolStripMenuItem.Text = "Vinculación";
-            this.vinculaciónToolStripMenuItem.Click += new System.EventHandler(this.vinculaciónToolStripMenuItem_Click);
-            // 
-            // ventasToolStripMenuItem
-            // 
-            this.ventasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ventasToolStripMenuItem.Text = "Ventas";
-            this.ventasToolStripMenuItem.Click += new System.EventHandler(this.ventasToolStripMenuItem_Click);
-            // 
-            // productosToolStripMenuItem
-            // 
-            this.productosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
-            this.productosToolStripMenuItem.Text = "Productos";
-            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registroEmpleadosToolStripMenuItem,
-            this.inventarioToolStripMenuItem});
-            this.toolStripMenuItem1.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(28, 20);
-            // 
-            // registroEmpleadosToolStripMenuItem
-            // 
-            this.registroEmpleadosToolStripMenuItem.Name = "registroEmpleadosToolStripMenuItem";
-            this.registroEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.registroEmpleadosToolStripMenuItem.Text = "Registro empleados";
-            this.registroEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.registroEmpleadosToolStripMenuItem_Click);
-            // 
-            // inventarioToolStripMenuItem
-            // 
-            this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.inventarioToolStripMenuItem.Text = "Inventario";
-            this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
-            // 
             // FrmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,7 +259,6 @@
             this.ClientSize = new System.Drawing.Size(673, 436);
             this.Controls.Add(this.panelFondo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVenta";
@@ -378,8 +266,6 @@
             this.panelFondo.PerformLayout();
             this.tabcontrol.ResumeLayout(false);
             this.metroTabControl.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -399,15 +285,5 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private System.Windows.Forms.TextBox txtCodigoProducto;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem recargasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vinculaciónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem registroEmpleadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inventarioToolStripMenuItem;
     }
 }

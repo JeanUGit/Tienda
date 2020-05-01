@@ -46,16 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.TsmRecargas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
-            this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsVentas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsProductos = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsInventario = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnVincular
@@ -63,7 +53,7 @@
             this.BtnVincular.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BtnVincular.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVincular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnVincular.Location = new System.Drawing.Point(471, 187);
+            this.BtnVincular.Location = new System.Drawing.Point(434, 187);
             this.BtnVincular.Name = "BtnVincular";
             this.BtnVincular.Size = new System.Drawing.Size(94, 33);
             this.BtnVincular.TabIndex = 46;
@@ -75,7 +65,7 @@
             this.BtnRegistroTarjeta.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BtnRegistroTarjeta.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegistroTarjeta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnRegistroTarjeta.Location = new System.Drawing.Point(471, 187);
+            this.BtnRegistroTarjeta.Location = new System.Drawing.Point(434, 187);
             this.BtnRegistroTarjeta.Name = "BtnRegistroTarjeta";
             this.BtnRegistroTarjeta.Size = new System.Drawing.Size(94, 33);
             this.BtnRegistroTarjeta.TabIndex = 45;
@@ -103,27 +93,27 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(453, 28);
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(428, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(186, 26);
+            this.label7.Size = new System.Drawing.Size(226, 31);
             this.label7.TabIndex = 42;
             this.label7.Text = "Registro de tarjetas:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 28);
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(31, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(198, 26);
+            this.label6.Size = new System.Drawing.Size(248, 31);
             this.label6.TabIndex = 41;
             this.label6.Text = "Registro de personas:";
             // 
             // TxtSaldoInicial
             // 
             this.TxtSaldoInicial.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSaldoInicial.Location = new System.Drawing.Point(471, 141);
+            this.TxtSaldoInicial.Location = new System.Drawing.Point(434, 141);
             this.TxtSaldoInicial.Name = "TxtSaldoInicial";
             this.TxtSaldoInicial.Size = new System.Drawing.Size(156, 27);
             this.TxtSaldoInicial.TabIndex = 35;
@@ -132,7 +122,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(467, 119);
+            this.label5.Location = new System.Drawing.Point(430, 119);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 19);
             this.label5.TabIndex = 34;
@@ -141,7 +131,7 @@
             // TxtCodigo
             // 
             this.TxtCodigo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigo.Location = new System.Drawing.Point(471, 83);
+            this.TxtCodigo.Location = new System.Drawing.Point(434, 83);
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(235, 27);
             this.TxtCodigo.TabIndex = 33;
@@ -150,7 +140,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(467, 60);
+            this.label4.Location = new System.Drawing.Point(430, 60);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 19);
             this.label4.TabIndex = 32;
@@ -234,97 +224,12 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Nombre completo:";
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmRecargas,
-            this.TsmCerrar,
-            this.TmsVinculacion,
-            this.TmsVentas,
-            this.TmsProductos,
-            this.otrosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(736, 25);
-            this.menuStrip1.TabIndex = 47;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // TsmRecargas
-            // 
-            this.TsmRecargas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TsmRecargas.ForeColor = System.Drawing.SystemColors.Window;
-            this.TsmRecargas.Name = "TsmRecargas";
-            this.TsmRecargas.Size = new System.Drawing.Size(74, 21);
-            this.TsmRecargas.Text = "Recargas";
-            this.TsmRecargas.Click += new System.EventHandler(this.TsmRecargas_Click);
-            // 
-            // TsmCerrar
-            // 
-            this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.TsmCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
-            this.TsmCerrar.Image = global::Capa_Diseño.Properties.Resources._1486564399_close_81512;
-            this.TsmCerrar.Name = "TsmCerrar";
-            this.TsmCerrar.Size = new System.Drawing.Size(28, 21);
-            this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
-            // 
-            // TmsVinculacion
-            // 
-            this.TmsVinculacion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TmsVinculacion.ForeColor = System.Drawing.SystemColors.Window;
-            this.TmsVinculacion.Name = "TmsVinculacion";
-            this.TmsVinculacion.Size = new System.Drawing.Size(85, 21);
-            this.TmsVinculacion.Text = "Vinculación";
-            this.TmsVinculacion.Click += new System.EventHandler(this.TmsVinculacion_Click);
-            // 
-            // otrosToolStripMenuItem
-            // 
-            this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmEmpleados,
-            this.TmsInventario});
-            this.otrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
-            this.otrosToolStripMenuItem.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
-            this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
-            this.otrosToolStripMenuItem.Size = new System.Drawing.Size(28, 21);
-            // 
-            // TsmEmpleados
-            // 
-            this.TsmEmpleados.BackColor = System.Drawing.SystemColors.Control;
-            this.TsmEmpleados.Name = "TsmEmpleados";
-            this.TsmEmpleados.Size = new System.Drawing.Size(194, 22);
-            this.TsmEmpleados.Text = "Registro de empleados";
-            this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click);
-            // 
-            // TmsVentas
-            // 
-            this.TmsVentas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TmsVentas.Name = "TmsVentas";
-            this.TmsVentas.Size = new System.Drawing.Size(53, 21);
-            this.TmsVentas.Text = "Ventas";
-            this.TmsVentas.Click += new System.EventHandler(this.TmsVentas_Click);
-            // 
-            // TmsProductos
-            // 
-            this.TmsProductos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TmsProductos.Name = "TmsProductos";
-            this.TmsProductos.Size = new System.Drawing.Size(73, 21);
-            this.TmsProductos.Text = "Productos";
-            this.TmsProductos.Click += new System.EventHandler(this.TmsProductos_Click);
-            // 
-            // TmsInventario
-            // 
-            this.TmsInventario.Name = "TmsInventario";
-            this.TmsInventario.Size = new System.Drawing.Size(194, 22);
-            this.TmsInventario.Text = "Inventario";
-            this.TmsInventario.Click += new System.EventHandler(this.TmsInventario_Click);
-            // 
             // FrmRegistroVinculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(736, 348);
+            this.ClientSize = new System.Drawing.Size(684, 348);
             this.Controls.Add(this.BtnVincular);
             this.Controls.Add(this.BtnRegistroTarjeta);
             this.Controls.Add(this.TxtCorreo);
@@ -343,13 +248,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistroVinculos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de vinculos";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,14 +277,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem TsmRecargas;
-        private System.Windows.Forms.ToolStripMenuItem TsmCerrar;
-        private System.Windows.Forms.ToolStripMenuItem TmsVinculacion;
-        private System.Windows.Forms.ToolStripMenuItem otrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem TsmEmpleados;
-        private System.Windows.Forms.ToolStripMenuItem TmsVentas;
-        private System.Windows.Forms.ToolStripMenuItem TmsProductos;
-        private System.Windows.Forms.ToolStripMenuItem TmsInventario;
     }
 }

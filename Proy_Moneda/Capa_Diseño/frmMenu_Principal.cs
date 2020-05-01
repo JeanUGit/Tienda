@@ -21,13 +21,13 @@ namespace Capa_Diseño
         {
             if (pnlMenu.Width == 220)
             { timerOcultarM.Enabled = true; }
-            if (pnlMenu.Width == 60)
+            if (pnlMenu.Width == 80)
             { timerMostrarM.Enabled = true; }
         }
 
         private void timerOcultarM_Tick(object sender, EventArgs e)
         {
-            if (pnlMenu.Width <= 60)
+            if (pnlMenu.Width <= 80)
             { timerOcultarM.Enabled = false; }
             else
             { pnlMenu.Width -= 20; }
@@ -38,7 +38,7 @@ namespace Capa_Diseño
             if (pnlMenu.Width >= 220)
             { timerMostrarM.Enabled = false; }
             else
-            { pnlMenu.Width += +20; }
+            { pnlMenu.Width += 20; }
         }
 
         private void lblCerrar_Click(object sender, EventArgs e)
@@ -65,5 +65,14 @@ namespace Capa_Diseño
 
         private void btnVinculaciones_Click(object sender, EventArgs e)
         {fnt_frmPn(new FrmRegistroVinculos());}
+
+        private void button1_Click(object sender, EventArgs e)
+        { fnt_frmPn(new FrmVenta()); }
+
+        private void button2_Click(object sender, EventArgs e)
+        { fnt_frmPn(new FrmInventario()); }
+
+        private void button3_Click(object sender, EventArgs e)
+        { fnt_frmPn(new FrmProductos()); }
     }
 }

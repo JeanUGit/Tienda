@@ -118,11 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="account_switch_outline_icon_140036" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\account_switch_outline_icon_140036.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="navegador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\navegador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1486564399-close_81512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1486564399-close_81512.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="avatar-de-hombre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\avatar-de-hombre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="controlar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\controlar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money-pig_icon-icons.com_56372" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\money-pig_icon-icons.com_56372.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menuoutline_110931" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\menuoutline_110931.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,13 +139,25 @@
   <data name="lock_closed_icon_124921" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock_closed_icon_124921.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="money-pig_icon-icons.com_56372" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\money-pig_icon-icons.com_56372.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maquina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\maquina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="key_icon_124940" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key_icon_124940.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="social" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\social.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="account_switch_outline_icon_140036" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\account_switch_outline_icon_140036.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486564399-close_81512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486564399-close_81512.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\exprimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="almacenamiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\almacenamiento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

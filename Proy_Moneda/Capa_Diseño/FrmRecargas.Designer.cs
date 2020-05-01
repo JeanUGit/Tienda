@@ -28,16 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRecargas));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.TsmRecargas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmCerrar = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsVentas = new System.Windows.Forms.ToolStripMenuItem();
-            this.otrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmEmpleados = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsInventario = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsProductos = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnRecargar = new System.Windows.Forms.Button();
             this.LblPersona = new System.Windows.Forms.Label();
@@ -48,99 +38,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmRecargas,
-            this.TsmCerrar,
-            this.TmsVinculacion,
-            this.TmsVentas,
-            this.otrosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(372, 25);
-            this.menuStrip1.TabIndex = 44;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // TsmRecargas
-            // 
-            this.TsmRecargas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TsmRecargas.ForeColor = System.Drawing.SystemColors.Window;
-            this.TsmRecargas.Name = "TsmRecargas";
-            this.TsmRecargas.Size = new System.Drawing.Size(74, 21);
-            this.TsmRecargas.Text = "Recargas";
-            this.TsmRecargas.Click += new System.EventHandler(this.TsmRecargas_Click);
-            // 
-            // TsmCerrar
-            // 
-            this.TsmCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.TsmCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.TsmCerrar.ForeColor = System.Drawing.SystemColors.Window;
-            this.TsmCerrar.Image = global::Capa_Diseño.Properties.Resources._1486564399_close_81512;
-            this.TsmCerrar.Name = "TsmCerrar";
-            this.TsmCerrar.Size = new System.Drawing.Size(28, 21);
-            this.TsmCerrar.Click += new System.EventHandler(this.TsmCerrar_Click);
-            // 
-            // TmsVinculacion
-            // 
-            this.TmsVinculacion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TmsVinculacion.ForeColor = System.Drawing.SystemColors.Window;
-            this.TmsVinculacion.Name = "TmsVinculacion";
-            this.TmsVinculacion.Size = new System.Drawing.Size(85, 21);
-            this.TmsVinculacion.Text = "Vinculación";
-            this.TmsVinculacion.Click += new System.EventHandler(this.TmsVinculacion_Click);
-            // 
-            // TmsVentas
-            // 
-            this.TmsVentas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TmsVentas.Name = "TmsVentas";
-            this.TmsVentas.Size = new System.Drawing.Size(53, 21);
-            this.TmsVentas.Text = "Ventas";
-            this.TmsVentas.Click += new System.EventHandler(this.TmsVentas_Click);
-            // 
-            // otrosToolStripMenuItem
-            // 
-            this.otrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmEmpleados,
-            this.TmsInventario,
-            this.TmsProductos});
-            this.otrosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.otrosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("otrosToolStripMenuItem.Image")));
-            this.otrosToolStripMenuItem.Name = "otrosToolStripMenuItem";
-            this.otrosToolStripMenuItem.Size = new System.Drawing.Size(28, 21);
-            // 
-            // TsmEmpleados
-            // 
-            this.TsmEmpleados.Name = "TsmEmpleados";
-            this.TsmEmpleados.Size = new System.Drawing.Size(194, 22);
-            this.TsmEmpleados.Text = "Registro de empleados";
-            this.TsmEmpleados.Click += new System.EventHandler(this.TsmEmpleados_Click_1);
-            // 
-            // TmsInventario
-            // 
-            this.TmsInventario.Name = "TmsInventario";
-            this.TmsInventario.Size = new System.Drawing.Size(194, 22);
-            this.TmsInventario.Text = "Inventario";
-            this.TmsInventario.Click += new System.EventHandler(this.TmsInventario_Click);
-            // 
-            // TmsProductos
-            // 
-            this.TmsProductos.Name = "TmsProductos";
-            this.TmsProductos.Size = new System.Drawing.Size(194, 22);
-            this.TmsProductos.Text = "Productos";
-            this.TmsProductos.Click += new System.EventHandler(this.TmsProductos_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 30);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(25, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 26);
+            this.label2.Size = new System.Drawing.Size(204, 31);
             this.label2.TabIndex = 38;
             this.label2.Text = "Recarga de saldo:";
             // 
@@ -239,7 +145,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(372, 398);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnRecargar);
             this.Controls.Add(this.LblPersona);
@@ -255,19 +160,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recargas";
             this.Load += new System.EventHandler(this.FrmRecargas_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem TsmRecargas;
-        private System.Windows.Forms.ToolStripMenuItem TsmCerrar;
-        private System.Windows.Forms.ToolStripMenuItem TmsVinculacion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnRecargar;
         private System.Windows.Forms.Label LblPersona;
@@ -278,10 +176,5 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox TxtCodigo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ToolStripMenuItem otrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem TsmEmpleados;
-        private System.Windows.Forms.ToolStripMenuItem TmsVentas;
-        private System.Windows.Forms.ToolStripMenuItem TmsInventario;
-        private System.Windows.Forms.ToolStripMenuItem TmsProductos;
     }
 }

@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.xToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsRecargas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsVinculacion = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsVentas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsProductos = new System.Windows.Forms.ToolStripMenuItem();
-            this.lToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsRegistroEmpleados = new System.Windows.Forms.ToolStripMenuItem();
-            this.TmsInventario = new System.Windows.Forms.ToolStripMenuItem();
             this.txtCantidadActual = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtPrecioCosto = new System.Windows.Forms.TextBox();
@@ -46,108 +37,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCatalogo = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xToolStripMenuItem,
-            this.TmsRecargas,
-            this.TmsVinculacion,
-            this.TmsVentas,
-            this.TmsProductos,
-            this.lToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(435, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // xToolStripMenuItem
-            // 
-            this.xToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.xToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.xToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("xToolStripMenuItem.Image")));
-            this.xToolStripMenuItem.Name = "xToolStripMenuItem";
-            this.xToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
-            this.xToolStripMenuItem.Text = "x";
-            this.xToolStripMenuItem.Click += new System.EventHandler(this.xToolStripMenuItem_Click);
-            // 
-            // TmsRecargas
-            // 
-            this.TmsRecargas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TmsRecargas.Name = "TmsRecargas";
-            this.TmsRecargas.Size = new System.Drawing.Size(66, 20);
-            this.TmsRecargas.Text = "Recargas";
-            this.TmsRecargas.Click += new System.EventHandler(this.TmsRecargas_Click);
-            // 
-            // TmsVinculacion
-            // 
-            this.TmsVinculacion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TmsVinculacion.Name = "TmsVinculacion";
-            this.TmsVinculacion.Size = new System.Drawing.Size(81, 20);
-            this.TmsVinculacion.Text = "Vinculación";
-            this.TmsVinculacion.Click += new System.EventHandler(this.TmsVinculacion_Click);
-            // 
-            // TmsVentas
-            // 
-            this.TmsVentas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TmsVentas.Name = "TmsVentas";
-            this.TmsVentas.Size = new System.Drawing.Size(53, 20);
-            this.TmsVentas.Text = "Ventas";
-            this.TmsVentas.Click += new System.EventHandler(this.TmsVentas_Click);
-            // 
-            // TmsProductos
-            // 
-            this.TmsProductos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TmsProductos.Name = "TmsProductos";
-            this.TmsProductos.Size = new System.Drawing.Size(73, 20);
-            this.TmsProductos.Text = "Productos";
-            this.TmsProductos.Click += new System.EventHandler(this.TmsProductos_Click);
-            // 
-            // lToolStripMenuItem
-            // 
-            this.lToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TmsRegistroEmpleados,
-            this.TmsInventario});
-            this.lToolStripMenuItem.Image = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
-            this.lToolStripMenuItem.Name = "lToolStripMenuItem";
-            this.lToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
-            // 
-            // TmsRegistroEmpleados
-            // 
-            this.TmsRegistroEmpleados.Name = "TmsRegistroEmpleados";
-            this.TmsRegistroEmpleados.Size = new System.Drawing.Size(178, 22);
-            this.TmsRegistroEmpleados.Text = "Registro empleados";
-            this.TmsRegistroEmpleados.Click += new System.EventHandler(this.TmsRegistroEmpleados_Click);
-            // 
-            // TmsInventario
-            // 
-            this.TmsInventario.Name = "TmsInventario";
-            this.TmsInventario.Size = new System.Drawing.Size(178, 22);
-            this.TmsInventario.Text = "Inventario";
-            this.TmsInventario.Click += new System.EventHandler(this.TmsInventario_Click);
-            // 
             // txtCantidadActual
             // 
-            this.txtCantidadActual.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCantidadActual.Location = new System.Drawing.Point(142, 293);
+            this.txtCantidadActual.Location = new System.Drawing.Point(136, 228);
+            this.txtCantidadActual.Multiline = true;
             this.txtCantidadActual.Name = "txtCantidadActual";
-            this.txtCantidadActual.Size = new System.Drawing.Size(126, 20);
+            this.txtCantidadActual.Size = new System.Drawing.Size(126, 27);
             this.txtCantidadActual.TabIndex = 32;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDescripcion.Location = new System.Drawing.Point(142, 163);
+            this.txtDescripcion.Location = new System.Drawing.Point(136, 98);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(214, 69);
@@ -155,27 +63,26 @@
             // 
             // txtPrecioCosto
             // 
-            this.txtPrecioCosto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPrecioCosto.Location = new System.Drawing.Point(142, 252);
+            this.txtPrecioCosto.Location = new System.Drawing.Point(136, 187);
+            this.txtPrecioCosto.Multiline = true;
             this.txtPrecioCosto.Name = "txtPrecioCosto";
-            this.txtPrecioCosto.Size = new System.Drawing.Size(214, 20);
+            this.txtPrecioCosto.Size = new System.Drawing.Size(214, 27);
             this.txtPrecioCosto.TabIndex = 28;
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCodigo.Location = new System.Drawing.Point(141, 123);
+            this.txtCodigo.Location = new System.Drawing.Point(135, 58);
+            this.txtCodigo.Multiline = true;
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(188, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(188, 27);
             this.txtCodigo.TabIndex = 27;
             // 
             // label9
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(20, 289);
+            this.label9.Location = new System.Drawing.Point(14, 224);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 19);
             this.label9.TabIndex = 24;
@@ -183,11 +90,10 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(20, 248);
+            this.label5.Location = new System.Drawing.Point(14, 183);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 19);
             this.label5.TabIndex = 20;
@@ -195,11 +101,10 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(20, 159);
+            this.label4.Location = new System.Drawing.Point(14, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 19);
             this.label4.TabIndex = 19;
@@ -207,20 +112,41 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(20, 119);
+            this.label2.Location = new System.Drawing.Point(14, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 19);
             this.label2.TabIndex = 18;
             this.label2.Text = "Codigo:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(229, 31);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Registro de Productos";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(329, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnCatalogo
             // 
-            this.btnCatalogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCatalogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.btnCatalogo.BackColor = System.Drawing.Color.White;
+            this.btnCatalogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCatalogo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnCatalogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnCatalogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -229,7 +155,7 @@
             this.btnCatalogo.ForeColor = System.Drawing.Color.Black;
             this.btnCatalogo.Image = ((System.Drawing.Image)(resources.GetObject("btnCatalogo.Image")));
             this.btnCatalogo.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCatalogo.Location = new System.Drawing.Point(272, 365);
+            this.btnCatalogo.Location = new System.Drawing.Point(18, 321);
             this.btnCatalogo.Name = "btnCatalogo";
             this.btnCatalogo.Size = new System.Drawing.Size(146, 42);
             this.btnCatalogo.TabIndex = 38;
@@ -239,8 +165,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.btnActualizar.BackColor = System.Drawing.Color.White;
             this.btnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnActualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -249,7 +174,7 @@
             this.btnActualizar.ForeColor = System.Drawing.Color.Black;
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
             this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizar.Location = new System.Drawing.Point(146, 365);
+            this.btnActualizar.Location = new System.Drawing.Point(145, 273);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(110, 42);
             this.btnActualizar.TabIndex = 36;
@@ -259,8 +184,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.btnGuardar.BackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -269,7 +193,7 @@
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(19, 365);
+            this.btnGuardar.Location = new System.Drawing.Point(18, 273);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(107, 42);
             this.btnGuardar.TabIndex = 34;
@@ -277,35 +201,12 @@
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(116, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 29);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Registro de Productos";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(329, 123);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(435, 427);
+            this.ClientSize = new System.Drawing.Size(364, 372);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCatalogo);
@@ -319,14 +220,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProductos";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -334,9 +231,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem;
         private System.Windows.Forms.TextBox txtCantidadActual;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtPrecioCosto;
@@ -350,12 +244,5 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem TmsRecargas;
-        private System.Windows.Forms.ToolStripMenuItem TmsVinculacion;
-        private System.Windows.Forms.ToolStripMenuItem TmsVentas;
-        private System.Windows.Forms.ToolStripMenuItem TmsProductos;
-        private System.Windows.Forms.ToolStripMenuItem lToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem TmsRegistroEmpleados;
-        private System.Windows.Forms.ToolStripMenuItem TmsInventario;
     }
 }
