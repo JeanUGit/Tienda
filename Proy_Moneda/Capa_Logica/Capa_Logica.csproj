@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLEmpleados.cs" />
+    <Compile Include="CLProductos.cs" />
+    <Compile Include="CLRecarga.cs" />
+    <Compile Include="CLVinculacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

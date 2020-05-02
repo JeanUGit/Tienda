@@ -47,6 +47,7 @@
             // 
             // txtCantidadActual
             // 
+            this.txtCantidadActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidadActual.Location = new System.Drawing.Point(136, 228);
             this.txtCantidadActual.Multiline = true;
             this.txtCantidadActual.Name = "txtCantidadActual";
@@ -55,6 +56,7 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(136, 98);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
@@ -63,6 +65,7 @@
             // 
             // txtPrecioCosto
             // 
+            this.txtPrecioCosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecioCosto.Location = new System.Drawing.Point(136, 187);
             this.txtPrecioCosto.Multiline = true;
             this.txtPrecioCosto.Name = "txtPrecioCosto";
@@ -71,11 +74,13 @@
             // 
             // txtCodigo
             // 
+            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Location = new System.Drawing.Point(135, 58);
             this.txtCodigo.Multiline = true;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(188, 27);
             this.txtCodigo.TabIndex = 27;
+            this.txtCodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCodigo_KeyUp);
             // 
             // label9
             // 
@@ -142,6 +147,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnCatalogo
             // 
@@ -155,13 +161,14 @@
             this.btnCatalogo.ForeColor = System.Drawing.Color.Black;
             this.btnCatalogo.Image = ((System.Drawing.Image)(resources.GetObject("btnCatalogo.Image")));
             this.btnCatalogo.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCatalogo.Location = new System.Drawing.Point(18, 321);
+            this.btnCatalogo.Location = new System.Drawing.Point(272, 273);
             this.btnCatalogo.Name = "btnCatalogo";
-            this.btnCatalogo.Size = new System.Drawing.Size(146, 42);
+            this.btnCatalogo.Size = new System.Drawing.Size(95, 42);
             this.btnCatalogo.TabIndex = 38;
-            this.btnCatalogo.Text = "Limpiar Campos";
+            this.btnCatalogo.Text = "Nuevo";
             this.btnCatalogo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCatalogo.UseVisualStyleBackColor = false;
+            this.btnCatalogo.Click += new System.EventHandler(this.btnCatalogo_Click);
             // 
             // btnActualizar
             // 
@@ -181,6 +188,7 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnGuardar
             // 
@@ -200,13 +208,14 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(364, 372);
+            this.ClientSize = new System.Drawing.Size(384, 372);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCatalogo);

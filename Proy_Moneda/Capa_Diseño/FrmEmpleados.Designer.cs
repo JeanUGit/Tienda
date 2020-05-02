@@ -72,6 +72,7 @@
             // BtnActualizar
             // 
             this.BtnActualizar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnActualizar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnActualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnActualizar.Location = new System.Drawing.Point(151, 311);
@@ -80,10 +81,12 @@
             this.BtnActualizar.TabIndex = 44;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // BtnRegistrar
             // 
             this.BtnRegistrar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegistrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnRegistrar.Location = new System.Drawing.Point(27, 311);
@@ -92,6 +95,7 @@
             this.BtnRegistrar.TabIndex = 43;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // TxtTelefonoEmpleado
             // 
@@ -116,6 +120,7 @@
             this.TxtDocumentoEmpleado.Name = "TxtDocumentoEmpleado";
             this.TxtDocumentoEmpleado.Size = new System.Drawing.Size(235, 27);
             this.TxtDocumentoEmpleado.TabIndex = 40;
+            this.TxtDocumentoEmpleado.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtDocumentoEmpleado_KeyUp);
             // 
             // label3
             // 
@@ -168,6 +173,7 @@
             this.Name = "FrmEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de empleados";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FrmEmpleados_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 

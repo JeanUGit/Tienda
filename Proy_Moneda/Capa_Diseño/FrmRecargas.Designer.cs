@@ -30,8 +30,6 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.BtnRecargar = new System.Windows.Forms.Button();
-            this.LblPersona = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.LblSaldo = new System.Windows.Forms.Label();
             this.TxtRecargaSaldo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,35 +51,17 @@
             // BtnRecargar
             // 
             this.BtnRecargar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnRecargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRecargar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRecargar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnRecargar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnRecargar.Location = new System.Drawing.Point(31, 339);
+            this.BtnRecargar.Location = new System.Drawing.Point(31, 290);
             this.BtnRecargar.Name = "BtnRecargar";
             this.BtnRecargar.Size = new System.Drawing.Size(94, 33);
             this.BtnRecargar.TabIndex = 37;
             this.BtnRecargar.Text = "Recargar";
             this.BtnRecargar.UseVisualStyleBackColor = false;
-            // 
-            // LblPersona
-            // 
-            this.LblPersona.AutoSize = true;
-            this.LblPersona.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPersona.Location = new System.Drawing.Point(27, 230);
-            this.LblPersona.Name = "LblPersona";
-            this.LblPersona.Size = new System.Drawing.Size(65, 19);
-            this.LblPersona.TabIndex = 36;
-            this.LblPersona.Text = "Persona:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 199);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 19);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Vinculada a:";
+            this.BtnRecargar.Click += new System.EventHandler(this.BtnRecargar_Click);
             // 
             // LblSaldo
             // 
@@ -96,7 +76,7 @@
             // TxtRecargaSaldo
             // 
             this.TxtRecargaSaldo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtRecargaSaldo.Location = new System.Drawing.Point(31, 296);
+            this.TxtRecargaSaldo.Location = new System.Drawing.Point(31, 233);
             this.TxtRecargaSaldo.Name = "TxtRecargaSaldo";
             this.TxtRecargaSaldo.Size = new System.Drawing.Size(235, 27);
             this.TxtRecargaSaldo.TabIndex = 33;
@@ -105,7 +85,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 274);
+            this.label1.Location = new System.Drawing.Point(27, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 19);
             this.label1.TabIndex = 32;
@@ -128,6 +108,7 @@
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(278, 27);
             this.TxtCodigo.TabIndex = 30;
+            this.TxtCodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtCodigo_KeyUp);
             // 
             // label4
             // 
@@ -144,11 +125,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(372, 398);
+            this.ClientSize = new System.Drawing.Size(372, 354);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnRecargar);
-            this.Controls.Add(this.LblPersona);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.LblSaldo);
             this.Controls.Add(this.TxtRecargaSaldo);
             this.Controls.Add(this.label1);
@@ -168,8 +147,6 @@
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnRecargar;
-        private System.Windows.Forms.Label LblPersona;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label LblSaldo;
         private System.Windows.Forms.TextBox TxtRecargaSaldo;
         private System.Windows.Forms.Label label1;

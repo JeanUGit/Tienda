@@ -46,31 +46,40 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.TxtContraseña = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.BtnActContraseña = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnVincular
             // 
             this.BtnVincular.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnVincular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVincular.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVincular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnVincular.Location = new System.Drawing.Point(434, 187);
+            this.BtnVincular.Location = new System.Drawing.Point(430, 296);
             this.BtnVincular.Name = "BtnVincular";
             this.BtnVincular.Size = new System.Drawing.Size(94, 33);
             this.BtnVincular.TabIndex = 46;
             this.BtnVincular.Text = "Vincular";
             this.BtnVincular.UseVisualStyleBackColor = false;
+            this.BtnVincular.Click += new System.EventHandler(this.BtnVincular_Click);
             // 
             // BtnRegistroTarjeta
             // 
             this.BtnRegistroTarjeta.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnRegistroTarjeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistroTarjeta.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegistroTarjeta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnRegistroTarjeta.Location = new System.Drawing.Point(434, 187);
+            this.BtnRegistroTarjeta.Location = new System.Drawing.Point(430, 296);
             this.BtnRegistroTarjeta.Name = "BtnRegistroTarjeta";
             this.BtnRegistroTarjeta.Size = new System.Drawing.Size(94, 33);
             this.BtnRegistroTarjeta.TabIndex = 45;
             this.BtnRegistroTarjeta.Text = "Registrar";
             this.BtnRegistroTarjeta.UseVisualStyleBackColor = false;
+            this.BtnRegistroTarjeta.Click += new System.EventHandler(this.BtnRegistroTarjeta_Click_1);
             // 
             // TxtCorreo
             // 
@@ -113,7 +122,7 @@
             // TxtSaldoInicial
             // 
             this.TxtSaldoInicial.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSaldoInicial.Location = new System.Drawing.Point(434, 141);
+            this.TxtSaldoInicial.Location = new System.Drawing.Point(437, 230);
             this.TxtSaldoInicial.Name = "TxtSaldoInicial";
             this.TxtSaldoInicial.Size = new System.Drawing.Size(156, 27);
             this.TxtSaldoInicial.TabIndex = 35;
@@ -122,7 +131,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(430, 119);
+            this.label5.Location = new System.Drawing.Point(433, 208);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 19);
             this.label5.TabIndex = 34;
@@ -135,6 +144,7 @@
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(235, 27);
             this.TxtCodigo.TabIndex = 33;
+            this.TxtCodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtCodigo_KeyUp);
             // 
             // label4
             // 
@@ -149,18 +159,21 @@
             // BtnActualizar
             // 
             this.BtnActualizar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnActualizar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnActualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnActualizar.Location = new System.Drawing.Point(161, 296);
+            this.BtnActualizar.Location = new System.Drawing.Point(37, 296);
             this.BtnActualizar.Name = "BtnActualizar";
             this.BtnActualizar.Size = new System.Drawing.Size(94, 33);
             this.BtnActualizar.TabIndex = 31;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // BtnRegistrar
             // 
             this.BtnRegistrar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegistrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnRegistrar.Location = new System.Drawing.Point(37, 296);
@@ -169,6 +182,7 @@
             this.BtnRegistrar.TabIndex = 30;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // TxtInstituto
             // 
@@ -193,6 +207,7 @@
             this.TxtDocumento.Name = "TxtDocumento";
             this.TxtDocumento.Size = new System.Drawing.Size(235, 27);
             this.TxtDocumento.TabIndex = 27;
+            this.TxtDocumento.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtDocumento_KeyUp);
             // 
             // label3
             // 
@@ -224,12 +239,73 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Nombre completo:";
             // 
+            // TxtContraseña
+            // 
+            this.TxtContraseña.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtContraseña.Location = new System.Drawing.Point(434, 141);
+            this.TxtContraseña.Name = "TxtContraseña";
+            this.TxtContraseña.Size = new System.Drawing.Size(235, 27);
+            this.TxtContraseña.TabIndex = 48;
+            this.TxtContraseña.UseSystemPasswordChar = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(430, 119);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 19);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "Contraseña:";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(433, 182);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(101, 13);
+            this.linkLabel1.TabIndex = 49;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Cambiar contraseña";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(592, 182);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(79, 13);
+            this.linkLabel2.TabIndex = 50;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Ver contraseña";
+            this.linkLabel2.MouseLeave += new System.EventHandler(this.linkLabel2_MouseLeave);
+            this.linkLabel2.MouseHover += new System.EventHandler(this.linkLabel2_MouseHover);
+            // 
+            // BtnActContraseña
+            // 
+            this.BtnActContraseña.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BtnActContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActContraseña.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActContraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnActContraseña.Location = new System.Drawing.Point(575, 296);
+            this.BtnActContraseña.Name = "BtnActContraseña";
+            this.BtnActContraseña.Size = new System.Drawing.Size(94, 33);
+            this.BtnActContraseña.TabIndex = 51;
+            this.BtnActContraseña.Text = "Actualizar";
+            this.BtnActContraseña.UseVisualStyleBackColor = false;
+            this.BtnActContraseña.Click += new System.EventHandler(this.BtnActContraseña_Click);
+            // 
             // FrmRegistroVinculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(684, 348);
+            this.Controls.Add(this.BtnActContraseña);
+            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.TxtContraseña);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.BtnVincular);
             this.Controls.Add(this.BtnRegistroTarjeta);
             this.Controls.Add(this.TxtCorreo);
@@ -252,6 +328,8 @@
             this.Name = "FrmRegistroVinculos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de vinculos";
+            this.Load += new System.EventHandler(this.FrmRegistroVinculos_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FrmRegistroVinculos_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,5 +355,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TxtContraseña;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Button BtnActContraseña;
     }
 }

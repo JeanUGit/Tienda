@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Capa_Logica;
 namespace Capa_Diseño
 {
     public partial class FrmRegistroVinculos : Form
@@ -17,12 +17,13 @@ namespace Capa_Diseño
             InitializeComponent();
             BtnRegistroTarjeta.Visible = true;
             BtnVincular.Visible = false;
+            BtnActContraseña.Visible = false;
+            BtnRegistrar.Visible = true;
+            BtnActualizar.Visible = false;
         }
 
         private void BtnRegistroTarjeta_Click(object sender, EventArgs e)
         {
-            BtnRegistroTarjeta.Visible = false;
-            BtnVincular.Visible = true;
         }
 
         private void TmsVinculacion_Click(object sender, EventArgs e)
@@ -74,6 +75,188 @@ namespace Capa_Diseño
             FrmInventario ObjInventario = new FrmInventario();
             ObjInventario.Show();
             Hide();
+        }
+        protected void ResetControl()
+        {
+            TxtDocumento.Clear();
+            TxtNombre.Clear();
+            TxtInstituto.Clear();
+            TxtCorreo.Clear();
+            TxtSaldoInicial.Clear();
+            TxtCodigo.Clear();
+            TxtContraseña.Clear();
+        }
+        protected void Func_FrmRegistrarVinculo_GuardarPersona()
+        {
+            CLVinculacion ObjVinculo = new CLVinculacion();
+            ObjVinculo.Documento = TxtDocumento.Text;
+            ObjVinculo.Nombre = TxtNombre.Text;
+            ObjVinculo.Institucion = TxtInstituto.Text;
+            ObjVinculo.Correo = TxtCorreo.Text;
+            ObjVinculo.SP_FrmRegistrarVinculo_GuardarPersona();
+            String message = "Guardo Exitosamente";
+            String caption = "Vinculación";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);            
+        }
+        protected void Func_FrmRegistrarVinculo_RegistrarTarjeta()
+        {
+            CLVinculacion ObjVinculo = new CLVinculacion();
+            ObjVinculo.RFID = TxtCodigo.Text;
+            ObjVinculo.Contraseña = TxtContraseña.Text;
+            ObjVinculo.Saldo = Convert.ToDouble(TxtSaldoInicial.Text);
+            ObjVinculo.SP_FrmRegistrarVinculo_RegistrarTarjeta();
+            String message = "Guardo Exitosamente";
+            String caption = "Vinculación";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        protected void Func_FrmRegistrarVinculo_BuscarPersona()
+        {
+            CLVinculacion ObjVinculo = new CLVinculacion();
+            ObjVinculo.Documento = TxtDocumento.Text;
+            ObjVinculo.SP_FrmRegistrarVinculo_BuscarPersona();
+            TxtNombre.Text = ObjVinculo.Nombre;
+            TxtInstituto.Text = ObjVinculo.Institucion;
+            TxtCodigo.Text = ObjVinculo.RFID;
+            TxtSaldoInicial.Text = Convert.ToString(ObjVinculo.Saldo);
+            TxtCorreo.Text = ObjVinculo.Correo;
+            TxtContraseña.Text = ObjVinculo.Contraseña;
+            TxtContraseña.Enabled = false;
+            if(ObjVinculo.msn == "")
+            {
+                BtnVincular.Visible = true;
+                BtnRegistroTarjeta.Visible = false;
+                BtnActualizar.Visible = true;
+                BtnRegistrar.Visible = false;
+            }
+            else
+            {
+                String message = "Persona no registrada";
+                String caption = "Vinculación";
+                var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                BtnVincular.Visible = false;
+                BtnRegistroTarjeta.Visible = true;
+                BtnActualizar.Visible = false;
+                BtnRegistrar.Visible = true;
+            }
+        }
+        protected void Func_FrmRegistrarVinculo_BuscarTarjeta()
+        {
+            CLVinculacion ObjVinculo = new CLVinculacion();
+            ObjVinculo.RFID = TxtCodigo.Text;
+            ObjVinculo.SP_FrmRegistrarVinculo_BuscarTarjeta();
+            TxtContraseña.Text = ObjVinculo.Contraseña;
+            if(TxtCodigo.Text == "" && TxtContraseña.Text == "")
+            {
+                BtnRegistroTarjeta.Visible = true;
+                BtnVincular.Visible = false;
+            }
+            else
+            {
+                BtnRegistroTarjeta.Visible = false;
+                BtnVincular.Visible = true;
+                TxtContraseña.Enabled = false;
+            }
+        }
+        protected void Func_FrmRegistrarVinculo_Vincular()
+        {
+            CLVinculacion ObjVinculo = new CLVinculacion();
+            ObjVinculo.Documento = TxtDocumento.Text;
+            ObjVinculo.RFID = TxtCodigo.Text;
+            ObjVinculo.SP_FrmRegistrarVinculo_Vincular();
+            String message = "Vinculación Exitosa";
+            String caption = "Vinculación";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        protected void Func_FrmRegistrarVinculo_ActualizarContraseña()
+        {
+            CLVinculacion ObjVinculo = new CLVinculacion();
+            ObjVinculo.RFID = TxtCodigo.Text;
+            ObjVinculo.Contraseña = TxtContraseña.Text;
+            ObjVinculo.SP_FrmRegistrarVinculo_ActualizarContraseña();
+        }
+        protected void Func_FrmRegistrarVinculo_ActualizarPersona()
+        {
+            CLVinculacion ObjVinculo = new CLVinculacion();
+            ObjVinculo.Documento = TxtDocumento.Text;
+            ObjVinculo.Nombre = TxtNombre.Text;
+            ObjVinculo.Institucion = TxtInstituto.Text;
+            ObjVinculo.Correo = TxtCorreo.Text;
+            ObjVinculo.SP_FrmRegistrarVinculo_ActualizarPersona();
+            String message = "Actualización Exitosa";
+            String caption = "Vinculación";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {            
+                TxtContraseña.Enabled = true;
+                BtnActContraseña.Visible = true;          
+        }
+
+        private void linkLabel2_MouseHover(object sender, EventArgs e)
+        {
+            TxtContraseña.UseSystemPasswordChar = false;
+        }
+
+        private void linkLabel2_MouseLeave(object sender, EventArgs e)
+        {
+            TxtContraseña.UseSystemPasswordChar = true;
+        }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            Func_FrmRegistrarVinculo_GuardarPersona();
+        }
+
+        private void BtnRegistroTarjeta_Click_1(object sender, EventArgs e)
+        {
+            Func_FrmRegistrarVinculo_RegistrarTarjeta();
+            BtnRegistroTarjeta.Visible = false;
+            BtnVincular.Visible = true;
+        }
+
+        private void BtnVincular_Click(object sender, EventArgs e)
+        {
+            Func_FrmRegistrarVinculo_Vincular();
+        }
+
+        private void BtnActContraseña_Click(object sender, EventArgs e)
+        {
+            Func_FrmRegistrarVinculo_ActualizarContraseña();
+            BtnActContraseña.Visible = false;
+        }
+
+        private void TxtDocumento_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                Func_FrmRegistrarVinculo_BuscarPersona();
+            }
+        }
+
+        private void TxtCodigo_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                Func_FrmRegistrarVinculo_BuscarTarjeta();
+            }
+        }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+            Func_FrmRegistrarVinculo_ActualizarPersona();
+        }
+
+        private void FrmRegistroVinculos_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Escape)
+            {
+                ResetControl();
+            }
+        }
+
+        private void FrmRegistroVinculos_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

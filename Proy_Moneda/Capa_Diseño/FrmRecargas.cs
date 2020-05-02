@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Capa_Logica;
 namespace Capa_Diseño
 {
     public partial class FrmRecargas : Form
@@ -70,6 +70,41 @@ namespace Capa_Diseño
             FrmProductos ObjProductos = new FrmProductos();
             ObjProductos.Show();
             Hide();
+        }
+        protected void Func_FrmRecargas_RecargarSaldo()
+        {
+            
+            CLRecarga ObjRecarga = new CLRecarga();
+            Double Total;
+            Total = Convert.ToDouble(TxtRecargaSaldo.Text) + Convert.ToDouble(LblSaldo.Text);
+            ObjRecarga.RFID = TxtCodigo.Text;
+            ObjRecarga.Saldo = Total;
+            ObjRecarga.SP_FrmRecargas_RecargarSaldo();
+            String message = "Recarga Exitosa";
+            String caption = "Recargas";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        protected void Func_FrmRecargas_Buscar()
+        {
+            CLRecarga ObjRecarga = new CLRecarga();
+            ObjRecarga.RFID = TxtCodigo.Text;
+            ObjRecarga.SP_FrmRecargas_Buscar();
+            LblSaldo.Text = Convert.ToString(ObjRecarga.Saldo);
+        }
+
+        private void TxtCodigo_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                Func_FrmRecargas_Buscar();
+            }
+        }
+
+        private void BtnRecargar_Click(object sender, EventArgs e)
+        {
+            Func_FrmRecargas_RecargarSaldo();
+            Func_FrmRecargas_Buscar();
+            TxtRecargaSaldo.Clear();
         }
     }
 }
