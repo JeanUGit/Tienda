@@ -74,5 +74,3 @@ D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmVenta.reso
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.frmMenu_Principal.resources
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.dll
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.pdb
-D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.dll
-D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.pdb
