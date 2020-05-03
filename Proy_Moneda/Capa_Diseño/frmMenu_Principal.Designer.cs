@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlCabecera = new System.Windows.Forms.Panel();
-            this.lblCerrar = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.timerOcultarM = new System.Windows.Forms.Timer(this.components);
             this.timerMostrarM = new System.Windows.Forms.Timer(this.components);
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.pnlCabecera.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
@@ -49,26 +49,13 @@
             // pnlCabecera
             // 
             this.pnlCabecera.BackColor = System.Drawing.Color.Blue;
-            this.pnlCabecera.Controls.Add(this.lblCerrar);
+            this.pnlCabecera.Controls.Add(this.btnCerrar);
             this.pnlCabecera.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCabecera.Location = new System.Drawing.Point(0, 0);
             this.pnlCabecera.Name = "pnlCabecera";
             this.pnlCabecera.Size = new System.Drawing.Size(900, 30);
             this.pnlCabecera.TabIndex = 0;
             this.pnlCabecera.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlCabecera_MouseDown);
-            // 
-            // lblCerrar
-            // 
-            this.lblCerrar.AutoSize = true;
-            this.lblCerrar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCerrar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCerrar.Location = new System.Drawing.Point(876, 0);
-            this.lblCerrar.Name = "lblCerrar";
-            this.lblCerrar.Size = new System.Drawing.Size(24, 24);
-            this.lblCerrar.TabIndex = 0;
-            this.lblCerrar.Text = "X";
-            this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
             // 
             // pnlMenu
             // 
@@ -106,7 +93,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::Capa_Diseño.Properties.Resources.almacenamiento;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(2, 483);
@@ -123,7 +110,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::Capa_Diseño.Properties.Resources.controlar;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 399);
@@ -140,7 +127,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::Capa_Diseño.Properties.Resources.maquina;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 311);
@@ -157,7 +144,7 @@
             this.btnVinculaciones.FlatAppearance.BorderSize = 0;
             this.btnVinculaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnVinculaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVinculaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVinculaciones.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVinculaciones.Image = global::Capa_Diseño.Properties.Resources.social;
             this.btnVinculaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVinculaciones.Location = new System.Drawing.Point(0, 225);
@@ -174,7 +161,7 @@
             this.btnRecargas.FlatAppearance.BorderSize = 0;
             this.btnRecargas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnRecargas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecargas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecargas.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecargas.Image = global::Capa_Diseño.Properties.Resources.navegador;
             this.btnRecargas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecargas.Location = new System.Drawing.Point(0, 139);
@@ -191,7 +178,7 @@
             this.btnRegEmple.FlatAppearance.BorderSize = 0;
             this.btnRegEmple.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnRegEmple.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegEmple.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegEmple.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegEmple.Image = global::Capa_Diseño.Properties.Resources.avatar_de_hombre;
             this.btnRegEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegEmple.Location = new System.Drawing.Point(0, 54);
@@ -224,6 +211,21 @@
             this.timerMostrarM.Interval = 20;
             this.timerMostrarM.Tick += new System.EventHandler(this.timerMostrarM_Tick);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Red;
+            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(868, 0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(32, 30);
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // frmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,7 +238,6 @@
             this.Name = "frmMenu_Principal";
             this.Text = "frmMenu_Principal";
             this.pnlCabecera.ResumeLayout(false);
-            this.pnlCabecera.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -247,7 +248,6 @@
         private System.Windows.Forms.Panel pnlCabecera;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Panel pnlContenedor;
-        private System.Windows.Forms.Label lblCerrar;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Timer timerOcultarM;
         private System.Windows.Forms.Timer timerMostrarM;
@@ -257,5 +257,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }
