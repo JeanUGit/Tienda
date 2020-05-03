@@ -276,10 +276,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(14, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 31);
+            this.label3.Size = new System.Drawing.Size(144, 31);
             this.label3.TabIndex = 56;
             this.label3.Text = "Inventario";
             // 
@@ -313,6 +313,7 @@
             this.Name = "FrmInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmInventario";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmInventario_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
