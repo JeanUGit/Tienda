@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlCabecera = new System.Windows.Forms.Panel();
-            this.lblCerrar = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnVinculaciones = new System.Windows.Forms.Button();
             this.btnRecargas = new System.Windows.Forms.Button();
             this.btnRegEmple = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.timerOcultarM = new System.Windows.Forms.Timer(this.components);
             this.timerMostrarM = new System.Windows.Forms.Timer(this.components);
+            this.button4 = new System.Windows.Forms.Button();
             this.pnlCabecera.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
@@ -49,25 +49,12 @@
             // pnlCabecera
             // 
             this.pnlCabecera.BackColor = System.Drawing.Color.Blue;
-            this.pnlCabecera.Controls.Add(this.lblCerrar);
+            this.pnlCabecera.Controls.Add(this.button4);
             this.pnlCabecera.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCabecera.Location = new System.Drawing.Point(0, 0);
             this.pnlCabecera.Name = "pnlCabecera";
             this.pnlCabecera.Size = new System.Drawing.Size(900, 30);
             this.pnlCabecera.TabIndex = 0;
-            // 
-            // lblCerrar
-            // 
-            this.lblCerrar.AutoSize = true;
-            this.lblCerrar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCerrar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCerrar.Location = new System.Drawing.Point(876, 0);
-            this.lblCerrar.Name = "lblCerrar";
-            this.lblCerrar.Size = new System.Drawing.Size(24, 24);
-            this.lblCerrar.TabIndex = 0;
-            this.lblCerrar.Text = "X";
-            this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
             // 
             // pnlMenu
             // 
@@ -84,6 +71,20 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(220, 570);
             this.pnlMenu.TabIndex = 1;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnMenu.BackgroundImage = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(177, 3);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(40, 40);
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // button3
             // 
@@ -187,20 +188,6 @@
             this.btnRegEmple.UseVisualStyleBackColor = true;
             this.btnRegEmple.Click += new System.EventHandler(this.btnRegEmple_Click);
             // 
-            // btnMenu
-            // 
-            this.btnMenu.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnMenu.BackgroundImage = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
-            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(177, 3);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(40, 40);
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
             // pnlContenedor
             // 
             this.pnlContenedor.AutoScroll = true;
@@ -221,6 +208,21 @@
             this.timerMostrarM.Interval = 20;
             this.timerMostrarM.Tick += new System.EventHandler(this.timerMostrarM_Tick);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
+            this.button4.Location = new System.Drawing.Point(867, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(33, 30);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "X";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // frmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,7 +235,6 @@
             this.Name = "frmMenu_Principal";
             this.Text = "frmMenu_Principal";
             this.pnlCabecera.ResumeLayout(false);
-            this.pnlCabecera.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -244,7 +245,6 @@
         private System.Windows.Forms.Panel pnlCabecera;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Panel pnlContenedor;
-        private System.Windows.Forms.Label lblCerrar;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Timer timerOcultarM;
         private System.Windows.Forms.Timer timerMostrarM;
@@ -254,5 +254,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

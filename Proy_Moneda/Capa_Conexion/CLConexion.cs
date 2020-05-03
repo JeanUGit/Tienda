@@ -9,6 +9,6 @@ namespace Capa_Conexion
 {
     public class CLConexion
     {
-        public SqlConnection connection = new SqlConnection("Data Source=DESKTOP-GF7M3J1\\SQLEXPRESS;Initial Catalog=DBMoneda; Integrated Security=true");
+        public SqlConnection connection = new SqlConnection("Data Source=JUANFMONTOYAA\\JUAN2020;Initial Catalog=DBMoneda; Integrated Security=true");
     }
 }

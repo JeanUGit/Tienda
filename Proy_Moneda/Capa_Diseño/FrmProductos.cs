@@ -119,7 +119,7 @@ namespace Capa_Diseño
             CLProductos ObjProducto = new CLProductos();
             ObjProducto.Codigo = txtCodigo.Text;
             ObjProducto.Nombre = txtDescripcion.Text;
-            ObjProducto.Precio = Convert.ToDouble(txtDescripcion.Text);
+            ObjProducto.Precio = Convert.ToDouble(txtPrecioCosto.Text);
             ObjProducto.Stock = Convert.ToInt32(txtCantidadActual.Text);
             ObjProducto.SP_FrmProductos_Actualizar();
         }
