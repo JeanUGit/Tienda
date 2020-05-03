@@ -262,6 +262,7 @@
             this.Name = "FrmVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVenta";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmVenta_MouseDown);
             this.panelFondo.ResumeLayout(false);
             this.panelFondo.PerformLayout();
             this.tabcontrol.ResumeLayout(false);

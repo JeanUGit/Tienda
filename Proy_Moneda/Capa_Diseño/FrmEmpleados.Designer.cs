@@ -62,10 +62,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(21, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(265, 31);
+            this.label6.Size = new System.Drawing.Size(322, 31);
             this.label6.TabIndex = 45;
             this.label6.Text = "Registro de empleados:";
             // 
@@ -174,6 +174,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de empleados";
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FrmEmpleados_KeyUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmEmpleados_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

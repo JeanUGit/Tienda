@@ -102,20 +102,20 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(428, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(226, 31);
+            this.label7.Size = new System.Drawing.Size(279, 31);
             this.label7.TabIndex = 42;
             this.label7.Text = "Registro de tarjetas:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(31, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(248, 31);
+            this.label6.Size = new System.Drawing.Size(301, 31);
             this.label6.TabIndex = 41;
             this.label6.Text = "Registro de personas:";
             // 
@@ -330,6 +330,7 @@
             this.Text = "Registro de vinculos";
             this.Load += new System.EventHandler(this.FrmRegistroVinculos_Load);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FrmRegistroVinculos_KeyUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmRegistroVinculos_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

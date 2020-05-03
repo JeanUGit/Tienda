@@ -32,13 +32,13 @@
             this.pnlCabecera = new System.Windows.Forms.Panel();
             this.lblCerrar = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnVinculaciones = new System.Windows.Forms.Button();
             this.btnRecargas = new System.Windows.Forms.Button();
             this.btnRegEmple = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.timerOcultarM = new System.Windows.Forms.Timer(this.components);
             this.timerMostrarM = new System.Windows.Forms.Timer(this.components);
@@ -55,6 +55,7 @@
             this.pnlCabecera.Name = "pnlCabecera";
             this.pnlCabecera.Size = new System.Drawing.Size(900, 30);
             this.pnlCabecera.TabIndex = 0;
+            this.pnlCabecera.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlCabecera_MouseDown);
             // 
             // lblCerrar
             // 
@@ -84,13 +85,28 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(220, 570);
             this.pnlMenu.TabIndex = 1;
+            this.pnlMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMenu_MouseDown);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnMenu.BackgroundImage = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(177, 3);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(40, 40);
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::Capa_Diseño.Properties.Resources.almacenamiento;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(2, 483);
@@ -107,7 +123,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::Capa_Diseño.Properties.Resources.controlar;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 399);
@@ -124,7 +140,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::Capa_Diseño.Properties.Resources.maquina;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 311);
@@ -141,7 +157,7 @@
             this.btnVinculaciones.FlatAppearance.BorderSize = 0;
             this.btnVinculaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnVinculaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVinculaciones.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVinculaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVinculaciones.Image = global::Capa_Diseño.Properties.Resources.social;
             this.btnVinculaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVinculaciones.Location = new System.Drawing.Point(0, 225);
@@ -158,7 +174,7 @@
             this.btnRecargas.FlatAppearance.BorderSize = 0;
             this.btnRecargas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnRecargas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecargas.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecargas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecargas.Image = global::Capa_Diseño.Properties.Resources.navegador;
             this.btnRecargas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecargas.Location = new System.Drawing.Point(0, 139);
@@ -175,7 +191,7 @@
             this.btnRegEmple.FlatAppearance.BorderSize = 0;
             this.btnRegEmple.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnRegEmple.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegEmple.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegEmple.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegEmple.Image = global::Capa_Diseño.Properties.Resources.avatar_de_hombre;
             this.btnRegEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegEmple.Location = new System.Drawing.Point(0, 54);
@@ -187,20 +203,6 @@
             this.btnRegEmple.UseVisualStyleBackColor = true;
             this.btnRegEmple.Click += new System.EventHandler(this.btnRegEmple_Click);
             // 
-            // btnMenu
-            // 
-            this.btnMenu.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnMenu.BackgroundImage = global::Capa_Diseño.Properties.Resources.menuoutline_110931;
-            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(177, 3);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(40, 40);
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
             // pnlContenedor
             // 
             this.pnlContenedor.AutoScroll = true;
@@ -210,6 +212,7 @@
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(680, 570);
             this.pnlContenedor.TabIndex = 2;
+            this.pnlContenedor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlContenedor_MouseDown);
             // 
             // timerOcultarM
             // 
