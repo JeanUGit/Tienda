@@ -121,6 +121,9 @@ namespace Capa_Diseño
             ObjProducto.Precio = Convert.ToDouble(txtPrecioCosto.Text);
             ObjProducto.Stock = Convert.ToInt32(txtCantidadActual.Text);
             ObjProducto.SP_FrmProductos_Actualizar();
+            String message = "Producto actualizado";
+            String caption = "Registro de productos";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnCatalogo_Click(object sender, EventArgs e)
