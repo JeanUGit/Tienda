@@ -48,6 +48,7 @@
             this.TxtCorreoEmpleado.Name = "TxtCorreoEmpleado";
             this.TxtCorreoEmpleado.Size = new System.Drawing.Size(368, 27);
             this.TxtCorreoEmpleado.TabIndex = 47;
+            this.TxtCorreoEmpleado.Leave += new System.EventHandler(this.TxtCorreoEmpleado_Leave);
             // 
             // label8
             // 
@@ -104,6 +105,7 @@
             this.TxtTelefonoEmpleado.Name = "TxtTelefonoEmpleado";
             this.TxtTelefonoEmpleado.Size = new System.Drawing.Size(368, 27);
             this.TxtTelefonoEmpleado.TabIndex = 42;
+            this.TxtTelefonoEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTelefonoEmpleado_KeyPress);
             // 
             // TxtNombreEmpleado
             // 
@@ -112,6 +114,7 @@
             this.TxtNombreEmpleado.Name = "TxtNombreEmpleado";
             this.TxtNombreEmpleado.Size = new System.Drawing.Size(368, 27);
             this.TxtNombreEmpleado.TabIndex = 41;
+            this.TxtNombreEmpleado.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtNombreEmpleado_KeyUp);
             // 
             // TxtDocumentoEmpleado
             // 
@@ -120,6 +123,7 @@
             this.TxtDocumentoEmpleado.Name = "TxtDocumentoEmpleado";
             this.TxtDocumentoEmpleado.Size = new System.Drawing.Size(235, 27);
             this.TxtDocumentoEmpleado.TabIndex = 40;
+            this.TxtDocumentoEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDocumentoEmpleado_KeyPress);
             this.TxtDocumentoEmpleado.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtDocumentoEmpleado_KeyUp);
             // 
             // label3

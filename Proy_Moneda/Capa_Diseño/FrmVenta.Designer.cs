@@ -49,7 +49,7 @@
             // 
             // panelFondo
             // 
-            this.panelFondo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelFondo.BackColor = System.Drawing.SystemColors.Window;
             this.panelFondo.Controls.Add(this.btnQuitarTicket);
             this.panelFondo.Controls.Add(this.btnNuevoTicket);
             this.panelFondo.Controls.Add(this.btnSalidaCajero);
@@ -77,7 +77,7 @@
             this.btnQuitarTicket.ForeColor = System.Drawing.Color.Black;
             this.btnQuitarTicket.Image = ((System.Drawing.Image)(resources.GetObject("btnQuitarTicket.Image")));
             this.btnQuitarTicket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuitarTicket.Location = new System.Drawing.Point(163, 354);
+            this.btnQuitarTicket.Location = new System.Drawing.Point(161, 368);
             this.btnQuitarTicket.Name = "btnQuitarTicket";
             this.btnQuitarTicket.Size = new System.Drawing.Size(148, 36);
             this.btnQuitarTicket.TabIndex = 16;
@@ -97,7 +97,7 @@
             this.btnNuevoTicket.ForeColor = System.Drawing.Color.Black;
             this.btnNuevoTicket.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoTicket.Image")));
             this.btnNuevoTicket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevoTicket.Location = new System.Drawing.Point(9, 354);
+            this.btnNuevoTicket.Location = new System.Drawing.Point(7, 368);
             this.btnNuevoTicket.Name = "btnNuevoTicket";
             this.btnNuevoTicket.Size = new System.Drawing.Size(148, 36);
             this.btnNuevoTicket.TabIndex = 15;

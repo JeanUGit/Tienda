@@ -51,6 +51,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.BtnActContraseña = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // BtnVincular
@@ -59,7 +60,7 @@
             this.BtnVincular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVincular.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVincular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnVincular.Location = new System.Drawing.Point(430, 425);
+            this.BtnVincular.Location = new System.Drawing.Point(441, 425);
             this.BtnVincular.Name = "BtnVincular";
             this.BtnVincular.Size = new System.Drawing.Size(94, 33);
             this.BtnVincular.TabIndex = 46;
@@ -73,7 +74,7 @@
             this.BtnRegistroTarjeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistroTarjeta.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegistroTarjeta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnRegistroTarjeta.Location = new System.Drawing.Point(430, 425);
+            this.BtnRegistroTarjeta.Location = new System.Drawing.Point(441, 425);
             this.BtnRegistroTarjeta.Name = "BtnRegistroTarjeta";
             this.BtnRegistroTarjeta.Size = new System.Drawing.Size(94, 33);
             this.BtnRegistroTarjeta.TabIndex = 45;
@@ -86,8 +87,9 @@
             this.TxtCorreo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCorreo.Location = new System.Drawing.Point(37, 360);
             this.TxtCorreo.Name = "TxtCorreo";
-            this.TxtCorreo.Size = new System.Drawing.Size(368, 27);
+            this.TxtCorreo.Size = new System.Drawing.Size(353, 27);
             this.TxtCorreo.TabIndex = 44;
+            this.TxtCorreo.Leave += new System.EventHandler(this.TxtCorreo_Leave);
             // 
             // label8
             // 
@@ -103,7 +105,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(428, 18);
+            this.label7.Location = new System.Drawing.Point(439, 18);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(279, 31);
             this.label7.TabIndex = 42;
@@ -122,16 +124,17 @@
             // TxtSaldoInicial
             // 
             this.TxtSaldoInicial.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSaldoInicial.Location = new System.Drawing.Point(434, 299);
+            this.TxtSaldoInicial.Location = new System.Drawing.Point(445, 299);
             this.TxtSaldoInicial.Name = "TxtSaldoInicial";
             this.TxtSaldoInicial.Size = new System.Drawing.Size(156, 27);
             this.TxtSaldoInicial.TabIndex = 35;
+            this.TxtSaldoInicial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSaldoInicial_KeyPress);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(430, 274);
+            this.label5.Location = new System.Drawing.Point(441, 274);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 23);
             this.label5.TabIndex = 34;
@@ -140,7 +143,7 @@
             // TxtCodigo
             // 
             this.TxtCodigo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigo.Location = new System.Drawing.Point(434, 107);
+            this.TxtCodigo.Location = new System.Drawing.Point(445, 107);
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(235, 27);
             this.TxtCodigo.TabIndex = 33;
@@ -150,7 +153,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(430, 81);
+            this.label4.Location = new System.Drawing.Point(441, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 23);
             this.label4.TabIndex = 32;
@@ -189,16 +192,18 @@
             this.TxtInstituto.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtInstituto.Location = new System.Drawing.Point(37, 274);
             this.TxtInstituto.Name = "TxtInstituto";
-            this.TxtInstituto.Size = new System.Drawing.Size(368, 27);
+            this.TxtInstituto.Size = new System.Drawing.Size(353, 27);
             this.TxtInstituto.TabIndex = 29;
+            this.TxtInstituto.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtInstituto_KeyUp);
             // 
             // TxtNombre
             // 
             this.TxtNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombre.Location = new System.Drawing.Point(37, 190);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(368, 27);
+            this.TxtNombre.Size = new System.Drawing.Size(353, 27);
             this.TxtNombre.TabIndex = 28;
+            this.TxtNombre.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtNombre_KeyUp);
             // 
             // TxtDocumento
             // 
@@ -207,6 +212,7 @@
             this.TxtDocumento.Name = "TxtDocumento";
             this.TxtDocumento.Size = new System.Drawing.Size(235, 27);
             this.TxtDocumento.TabIndex = 27;
+            this.TxtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDocumento_KeyPress);
             this.TxtDocumento.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtDocumento_KeyUp);
             // 
             // label3
@@ -242,7 +248,7 @@
             // TxtContraseña
             // 
             this.TxtContraseña.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtContraseña.Location = new System.Drawing.Point(434, 190);
+            this.TxtContraseña.Location = new System.Drawing.Point(445, 190);
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.Size = new System.Drawing.Size(235, 27);
             this.TxtContraseña.TabIndex = 48;
@@ -252,7 +258,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(430, 165);
+            this.label9.Location = new System.Drawing.Point(441, 165);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(103, 23);
             this.label9.TabIndex = 47;
@@ -261,7 +267,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(434, 232);
+            this.linkLabel1.Location = new System.Drawing.Point(445, 232);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(101, 13);
             this.linkLabel1.TabIndex = 49;
@@ -287,7 +293,7 @@
             this.BtnActContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnActContraseña.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnActContraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnActContraseña.Location = new System.Drawing.Point(575, 425);
+            this.BtnActContraseña.Location = new System.Drawing.Point(586, 425);
             this.BtnActContraseña.Name = "BtnActContraseña";
             this.BtnActContraseña.Size = new System.Drawing.Size(94, 33);
             this.BtnActContraseña.TabIndex = 51;
@@ -295,12 +301,21 @@
             this.BtnActContraseña.UseVisualStyleBackColor = false;
             this.BtnActContraseña.Click += new System.EventHandler(this.BtnActContraseña_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Blue;
+            this.panel1.Location = new System.Drawing.Point(412, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 530);
+            this.panel1.TabIndex = 52;
+            // 
             // FrmRegistroVinculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(728, 530);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnActContraseña);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -361,5 +376,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button BtnActContraseña;
+        private System.Windows.Forms.Panel panel1;
     }
 }

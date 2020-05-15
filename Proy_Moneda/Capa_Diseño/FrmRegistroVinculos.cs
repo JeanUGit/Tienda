@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -269,6 +270,96 @@ namespace Capa_Diseño
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void TxtDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Solo ingresar datos numericos
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            //Utilizar la tecla backpace
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void TxtSaldoInicial_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Solo ingresar datos numericos
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            //Utilizar la tecla backpace
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void TxtNombre_KeyUp(object sender, KeyEventArgs e)
+        {
+            TxtNombre.CharacterCasing = CharacterCasing.Upper;
+        }
+
+        private void TxtInstituto_KeyUp(object sender, KeyEventArgs e)
+        {
+            TxtInstituto.CharacterCasing = CharacterCasing.Upper;
+        }
+
+        private void TxtCorreo_Leave(object sender, EventArgs e)
+        {
+            if (TxtCorreo.Text == "")
+            {
+
+            }
+            else
+            {
+                //Capturar el email
+                if (ValidarEmail(TxtCorreo.Text))
+                {
+                }
+                else
+                {
+                    String message = "Dirección de correo no válida";
+                    String caption = "Validación de email";
+                    var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TxtCorreo.SelectAll();
+                    TxtCorreo.Focus();
+                }
+            }
+        }
+        public static bool ValidarEmail(string email)
+        {
+            string expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+            if (Regex.IsMatch(email, expresion))
+            {
+                if (Regex.Replace(email, expresion, String.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
