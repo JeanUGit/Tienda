@@ -16,7 +16,7 @@ namespace Capa_Diseño
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenu_Principal());
+            Application.Run(new FrmLogin());
         }
     }
 }

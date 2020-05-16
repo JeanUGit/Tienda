@@ -159,6 +159,7 @@
     <Content Include="Imagenes\1492790860-8check_84164.png" />
     <Content Include="Imagenes\3643762-find-glass-magnifying-search-zoom_113420.png" />
     <Content Include="Imagenes\Windows_Close_Program_22531.png" />
+    <None Include="Resources\carrito-supermercado.jpg" />
     <None Include="Imagenes\social.png" />
     <None Include="Resources\key_icon_124940.ico" />
     <None Include="Resources\lock_closed_icon_124921.ico" />
