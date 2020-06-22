@@ -60,12 +60,16 @@
             // panelFondo
             // 
             this.panelFondo.BackColor = System.Drawing.SystemColors.Window;
+<<<<<<< HEAD
             this.panelFondo.Controls.Add(this.lblNumeroV);
             this.panelFondo.Controls.Add(this.lblNumeroVenta);
             this.panelFondo.Controls.Add(this.lblNombreCliente);
             this.panelFondo.Controls.Add(this.txtDocumentoCliente);
             this.panelFondo.Controls.Add(this.label2);
             this.panelFondo.Controls.Add(this.TabControl);
+=======
+            this.panelFondo.Controls.Add(this.btnQuitarTicket);
+>>>>>>> b702fc6dd135239f82097e5195c25a2c047e06a8
             this.panelFondo.Controls.Add(this.btnNuevoTicket);
             this.panelFondo.Controls.Add(this.btnSalidaCajero);
             this.panelFondo.Controls.Add(this.btnAgregarCajero);
@@ -80,6 +84,7 @@
             this.panelFondo.Size = new System.Drawing.Size(673, 436);
             this.panelFondo.TabIndex = 2;
             // 
+<<<<<<< HEAD
             // lblNombreCliente
             // 
             this.lblNombreCliente.Font = new System.Drawing.Font("Javanese Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,6 +187,27 @@
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
+=======
+            // btnQuitarTicket
+            // 
+            this.btnQuitarTicket.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnQuitarTicket.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.btnQuitarTicket.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnQuitarTicket.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.btnQuitarTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitarTicket.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitarTicket.ForeColor = System.Drawing.Color.Black;
+            this.btnQuitarTicket.Image = ((System.Drawing.Image)(resources.GetObject("btnQuitarTicket.Image")));
+            this.btnQuitarTicket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuitarTicket.Location = new System.Drawing.Point(161, 368);
+            this.btnQuitarTicket.Name = "btnQuitarTicket";
+            this.btnQuitarTicket.Size = new System.Drawing.Size(148, 36);
+            this.btnQuitarTicket.TabIndex = 16;
+            this.btnQuitarTicket.Text = "Quitar Tiquete";
+            this.btnQuitarTicket.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnQuitarTicket.UseVisualStyleBackColor = false;
+            this.btnQuitarTicket.Click += new System.EventHandler(this.btnQuitarTicket_Click);
+>>>>>>> b702fc6dd135239f82097e5195c25a2c047e06a8
             // 
             // btnNuevoTicket
             // 
@@ -194,7 +220,11 @@
             this.btnNuevoTicket.ForeColor = System.Drawing.Color.Black;
             this.btnNuevoTicket.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoTicket.Image")));
             this.btnNuevoTicket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnNuevoTicket.Location = new System.Drawing.Point(33, 354);
+=======
+            this.btnNuevoTicket.Location = new System.Drawing.Point(7, 368);
+>>>>>>> b702fc6dd135239f82097e5195c25a2c047e06a8
             this.btnNuevoTicket.Name = "btnNuevoTicket";
             this.btnNuevoTicket.Size = new System.Drawing.Size(163, 42);
             this.btnNuevoTicket.TabIndex = 15;

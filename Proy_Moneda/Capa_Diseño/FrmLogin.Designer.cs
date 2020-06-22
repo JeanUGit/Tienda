@@ -31,8 +31,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.TxtContraseña = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -41,6 +39,10 @@
             this.BtnIngresar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +51,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(155, 129);
+            this.label3.Location = new System.Drawing.Point(155, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 19);
             this.label3.TabIndex = 41;
@@ -58,7 +60,7 @@
             // TxtContraseña
             // 
             this.TxtContraseña.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtContraseña.Location = new System.Drawing.Point(88, 152);
+            this.TxtContraseña.Location = new System.Drawing.Point(88, 166);
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.Size = new System.Drawing.Size(235, 27);
             this.TxtContraseña.TabIndex = 44;
@@ -67,37 +69,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(166, 58);
+            this.label1.Location = new System.Drawing.Point(166, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 19);
             this.label1.TabIndex = 43;
             this.label1.Text = "Usuario:";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Capa_Diseño.Properties.Resources.key_icon_124940;
-            this.pictureBox2.Location = new System.Drawing.Point(34, 129);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 46;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Capa_Diseño.Properties.Resources.lock_closed_icon_124921;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 45;
-            this.pictureBox1.TabStop = false;
-            // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(3, 253);
+            this.textBox2.Location = new System.Drawing.Point(3, 278);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(364, 6);
@@ -110,7 +92,7 @@
             this.textBox3.Location = new System.Drawing.Point(361, -2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(6, 261);
+            this.textBox3.Size = new System.Drawing.Size(6, 286);
             this.textBox3.TabIndex = 52;
             // 
             // textBox4
@@ -120,7 +102,7 @@
             this.textBox4.Location = new System.Drawing.Point(0, 0);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(6, 261);
+            this.textBox4.Size = new System.Drawing.Size(6, 284);
             this.textBox4.TabIndex = 54;
             // 
             // textBox5
@@ -138,7 +120,7 @@
             this.BtnCerrar.BackColor = System.Drawing.Color.Red;
             this.BtnCerrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnCerrar.Location = new System.Drawing.Point(212, 194);
+            this.BtnCerrar.Location = new System.Drawing.Point(212, 219);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(94, 33);
             this.BtnCerrar.TabIndex = 57;
@@ -151,7 +133,7 @@
             this.BtnIngresar.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BtnIngresar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIngresar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnIngresar.Location = new System.Drawing.Point(88, 194);
+            this.BtnIngresar.Location = new System.Drawing.Point(88, 219);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(94, 33);
             this.BtnIngresar.TabIndex = 56;
@@ -172,17 +154,48 @@
             // TxtUsuario
             // 
             this.TxtUsuario.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsuario.Location = new System.Drawing.Point(88, 81);
+            this.TxtUsuario.Location = new System.Drawing.Point(88, 86);
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(235, 27);
             this.TxtUsuario.TabIndex = 42;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Capa_Diseño.Properties.Resources.carrito_supermercado;
+            this.pictureBox3.Location = new System.Drawing.Point(367, -1);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(328, 285);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 59;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Capa_Diseño.Properties.Resources.key_icon_124940;
+            this.pictureBox2.Location = new System.Drawing.Point(34, 143);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 46;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Capa_Diseño.Properties.Resources.lock_closed_icon_124921;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 45;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(366, 260);
+            this.ClientSize = new System.Drawing.Size(695, 286);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.BtnIngresar);
@@ -201,6 +214,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmLogin_MouseDown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -222,5 +236,6 @@
         private System.Windows.Forms.Button BtnIngresar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtUsuario;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -66,17 +66,17 @@
             // LblSaldo
             // 
             this.LblSaldo.AutoSize = true;
-            this.LblSaldo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSaldo.Location = new System.Drawing.Point(27, 163);
+            this.LblSaldo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSaldo.Location = new System.Drawing.Point(29, 169);
             this.LblSaldo.Name = "LblSaldo";
-            this.LblSaldo.Size = new System.Drawing.Size(48, 19);
+            this.LblSaldo.Size = new System.Drawing.Size(57, 23);
             this.LblSaldo.TabIndex = 34;
             this.LblSaldo.Text = "Saldo:";
             // 
             // TxtRecargaSaldo
             // 
             this.TxtRecargaSaldo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtRecargaSaldo.Location = new System.Drawing.Point(31, 233);
+            this.TxtRecargaSaldo.Location = new System.Drawing.Point(31, 237);
             this.TxtRecargaSaldo.Name = "TxtRecargaSaldo";
             this.TxtRecargaSaldo.Size = new System.Drawing.Size(235, 27);
             this.TxtRecargaSaldo.TabIndex = 33;
@@ -84,20 +84,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 211);
+            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(27, 214);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 19);
+            this.label1.Size = new System.Drawing.Size(139, 23);
             this.label1.TabIndex = 32;
             this.label1.Text = "Saldo a recargar:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 132);
+            this.label5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(29, 138);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 19);
+            this.label5.Size = new System.Drawing.Size(57, 23);
             this.label5.TabIndex = 31;
             this.label5.Text = "Saldo:";
             // 
@@ -113,10 +113,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 71);
+            this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(27, 70);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 19);
+            this.label4.Size = new System.Drawing.Size(68, 23);
             this.label4.TabIndex = 29;
             this.label4.Text = "Código:";
             // 

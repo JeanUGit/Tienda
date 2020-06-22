@@ -77,4 +77,9 @@ C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Cone
 C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.pdb
 C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.frmMenu_Principal.resources
 C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.CoreCompileInputs.cache
+<<<<<<< HEAD
 C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmBuscar.resources
+=======
+D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.dll
+D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.pdb
+>>>>>>> b702fc6dd135239f82097e5195c25a2c047e06a8

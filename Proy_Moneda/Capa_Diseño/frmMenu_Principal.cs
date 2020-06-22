@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,15 +25,15 @@ namespace Capa_Diseño
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (pnlMenu.Width == 220)
+            if (pnlMenu.Width == 229)
             { timerOcultarM.Enabled = true; }
-            if (pnlMenu.Width == 80)
+            if (pnlMenu.Width == 95)
             { timerMostrarM.Enabled = true; }
         }
 
         private void timerOcultarM_Tick(object sender, EventArgs e)
         {
-            if (pnlMenu.Width <= 80)
+            if (pnlMenu.Width <= 95)
             { timerOcultarM.Enabled = false; }
             else
             { pnlMenu.Width -= 20; }
@@ -40,7 +41,7 @@ namespace Capa_Diseño
 
         private void timerMostrarM_Tick(object sender, EventArgs e)
         {
-            if (pnlMenu.Width >= 220)
+            if (pnlMenu.Width >= 229)
             { timerMostrarM.Enabled = false; }
             else
             { pnlMenu.Width += 20; }
@@ -63,7 +64,7 @@ namespace Capa_Diseño
         }
 
         private void btnRegEmple_Click(object sender, EventArgs e)
-        { fnt_frmPn(new FrmEmpleados()); }
+        { fnt_frmPn(new FrmEmpleados());}
 
         private void btnRecargas_Click(object sender, EventArgs e)
         {fnt_frmPn(new FrmRecargas());}
@@ -96,6 +97,27 @@ namespace Capa_Diseño
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void button4_Click(object sender, EventArgs e)
+        { Application.Exit(); }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            pbMaximizar.Visible = false;
+            pbNormal.Visible = true;
+        }
+
+        private void pbNormal_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            pbMaximizar.Visible = true;
+            pbNormal.Visible = false;
+        }
+
+        private void pbMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -21,10 +21,7 @@ namespace Capa_Diseño
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")] private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")] private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
 
-        }
 
         private void TmsRecargas_Click(object sender, EventArgs e)
         {
@@ -72,9 +69,7 @@ namespace Capa_Diseño
         {
             DialogResult result = MessageBox.Show("¿Desea Cerrar La Pagina?", "Pagina de Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            {Application.Exit();}
         }
         protected void ResetControl()
         {
@@ -123,37 +118,30 @@ namespace Capa_Diseño
             CLProductos ObjProducto = new CLProductos();
             ObjProducto.Codigo = txtCodigo.Text;
             ObjProducto.Nombre = txtDescripcion.Text;
-            ObjProducto.Precio = Convert.ToDouble(txtDescripcion.Text);
+            ObjProducto.Precio = Convert.ToDouble(txtPrecioCosto.Text);
             ObjProducto.Stock = Convert.ToInt32(txtCantidadActual.Text);
             ObjProducto.SP_FrmProductos_Actualizar();
+            String message = "Producto actualizado";
+            String caption = "Registro de productos";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnCatalogo_Click(object sender, EventArgs e)
-        {
-            ResetControl();
-        }
+        {ResetControl();}
 
         private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            Func_FrmProductos_Guardar();
-        }
+        {Func_FrmProductos_Guardar();}
 
         private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            Func_FrmProductos_Actualizar();
-        }
+        {Func_FrmProductos_Actualizar();}
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Func_FrmProductos_Buscar();
-        }
+        {Func_FrmProductos_Buscar();}
 
         private void txtCodigo_KeyUp(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
-            {
-                Func_FrmProductos_Buscar();
-            }
+            {Func_FrmProductos_Buscar();}
         }
     }
 }
