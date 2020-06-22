@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-using Capa_Conexion;
+using Capa_Datos;
 namespace Capa_Logica
 {
     public class CLRecarga

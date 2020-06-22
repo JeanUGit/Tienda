@@ -10,3 +10,9 @@ C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Conexion.dll
 C:\Users\USUARIO\Desktop\Tienda\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Conexion.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\bin\Debug\Capa_Conexion.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\bin\Debug\Capa_Conexion.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Conexion.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Conexion.pdb

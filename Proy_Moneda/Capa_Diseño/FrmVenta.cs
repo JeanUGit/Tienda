@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capa_Logica;
 
 namespace Capa_Diseño
 {
@@ -23,28 +24,67 @@ namespace Capa_Diseño
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")] private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")] private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        public void Func_QuitarTicket()
+        public void Func_NuevoTicket()
         {
-            int num = Convert.ToInt32(metroTabControl.TabPages.Count.ToString());
-            if (num > 1)
+            if(!(tabla.RowCount == 0))
             {
-                metroTabControl.TabPages.Remove(metroTabControl.SelectedTab);
-            }
-            else
-            {
-                MessageBox.Show("No se puede eliminar el unico Ticket", "Advertencia!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("Desea borrar toda la información del ticket llamado  " + TabControl.SelectedTab.Text.ToUpper() + " ", "¡¡Mensaje de Confirmación!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    ticket.Text = "TICKET 0";
+                    lblTotal.Text = "$0";
+                        while(tabla.RowCount >= 1)
+                        { tabla.Rows.Remove(tabla.CurrentRow); }
+                }
+
             }
         }
 
-        public void Func_NuevoTicket()
+        protected void Fnt_CargarValor()
         {
-            TabPage nuevo = new TabPage("Tiquete");
-            nuevo.BackColor = Color.White;
-            metroTabControl.TabPages.Add(nuevo);
+            double saldo = 0;
+            if (!(tabla.RowCount == 0))
+            {
+               
+                for (int x = 0; x < tabla.RowCount; x++)
+                {
+                    saldo += Convert.ToDouble(tabla.Rows[x].Cells[2].Value) * Convert.ToDouble(tabla.Rows[x].Cells[4].Value);
+                }
+
+                lblTotal.Text = saldo.ToString("C");
+            }
+            else { lblTotal.Text = saldo.ToString("C"); }
+            
+                
         }
+
+        protected void Fnt_Cliente()
+        {
+            ClsVentaInfo objVe = new ClsVentaInfo();
+            objVe.Fnt_CargarCliente(txtDocumentoCliente.Text);
+            if (objVe.SW() == 1)
+            {
+                lblNombreCliente.Text = objVe.Nombre();
+                ticket.Text = objVe.Nombre().ToUpper();
+            }
+            else if(objVe.SW() == 0 ) { MessageBox.Show(objVe.GetMessage(), "¡¡¡Mensaje de Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            
+        }
+
         private void btnNuevoTicket_Click(object sender, EventArgs e)
         {
             Func_NuevoTicket();
+        }
+
+        protected void Fnt_GuardarCompraDET()
+        {
+            ClsVentaInfo objVe = new ClsVentaInfo();
+            objVe.Fnt_GuardarCompraDetalle(txtDocumentoCliente.Text,float.Parse(lblTotal.Text, System.Globalization.NumberStyles.Currency),tabla);
+            if (objVe.SW() == 0)
+            {
+                MessageBox.Show(objVe.GetMessage(), "¡¡¡Mensaje de Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (objVe.SW() == 1) { MessageBox.Show(objVe.GetMessage(), "¡¡¡Mensaje de Información!!!", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void xToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -56,71 +96,87 @@ namespace Capa_Diseño
             }
         }
 
-        private void metroTabControl_DoubleClick(object sender, EventArgs e)
-        {
-            string texto = Interaction.InputBox(" Ingrese El Nuevo Nombre del tiquete!");
-            if (!texto.Equals(""))
-            {
-                metroTabControl.SelectedTab.Text = texto;
-            }
-        }
-
-        private void btnQuitarTicket_Click(object sender, EventArgs e)
-        {
-            Func_QuitarTicket();
-        }
-
         private void btnAgregarCajero_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void recargasToolStripMenuItem_Click(object sender, EventArgs e)
+        public void Fnt_BuscarProducto(String code) 
         {
-            FrmRecargas ObjRecargas = new FrmRecargas();
-            ObjRecargas.Show();
-            Hide();
+            ClsVentaInfo objventa = new ClsVentaInfo();
+            objventa.Fnt_BuscarXCodigo(code);
+            if (objventa.SW() == 1)
+            {
+                tabla.Rows.Add(objventa.GetTable()[0], objventa.GetTable()[1], objventa.GetTable()[2], objventa.GetTable()[3], objventa.GetTable()[4]);
+                Fnt_CargarValor();
+            }
+            else if (objventa.SW() == 0)
+            {
+                MessageBox.Show(objventa.GetMessage(), "¡¡¡Mensaje de Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+            }
+            
         }
 
-        private void vinculaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-            FrmRegistroVinculos ObjVinculo = new FrmRegistroVinculos();
-            ObjVinculo.Show();
-            Hide();
+            FrmBuscar buscar = new FrmBuscar();
+            buscar.StartPosition = FormStartPosition.CenterScreen;
+            buscar.PassCode += new FrmBuscar.pasarCodigo(Fnt_BuscarProducto); //Estamos usando un evento que llama a un delegado
+            buscar.ShowDialog();
         }
 
-        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void txtCodigoProducto_KeyUp(object sender, KeyEventArgs e)
         {
-            FrmVenta ObjVenta = new FrmVenta();
-            ObjVenta.Show();
-            Hide();
+            if (e.KeyCode == Keys.Enter)
+            {
+                Fnt_BuscarProducto(txtCodigoProducto.Text);
+            }
         }
 
-        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FrmVenta_KeyUp(object sender, KeyEventArgs e)
         {
-            FrmProductos ObjProductos = new FrmProductos();
-            ObjProductos.Show();
-            Hide();
+            if (!(tabla.RowCount == 0))
+            {
+                if (e.KeyCode == Keys.OemMinus)
+                {
+                    if ((Convert.ToInt32(tabla.CurrentRow.Cells[4].Value) - 1) == 0)
+                    {
+                        DialogResult result = MessageBox.Show("No se puede Vender 0 cantidad de producto, si le da OK va a eliminar por completo este producto de está lista", "Mensaje de Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        if (result == DialogResult.OK)
+                        {
+                            tabla.Rows.Remove(tabla.CurrentRow);
+                        }
+                    }
+                    else { tabla.CurrentRow.Cells[4].Value = Convert.ToInt32(tabla.CurrentRow.Cells[4].Value) - 1; }
+
+                }
+                if (e.KeyCode == Keys.Oemplus)
+                {
+                    if ((Convert.ToInt32(tabla.CurrentRow.Cells[4].Value) + 1) > (Convert.ToInt32(tabla.CurrentRow.Cells[3].Value)))
+                    {
+                        MessageBox.Show("No se puede Vender MAYOR cantidad de productos a los Existentes en el stock", "Mensaje de Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                    }
+                    else { tabla.CurrentRow.Cells[4].Value = Convert.ToInt32(tabla.CurrentRow.Cells[4].Value) + 1; }
+
+                }
+                Fnt_CargarValor();
+            }
+
+
+            
         }
 
-        private void registroEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void txtDocumentoCliente_KeyUp(object sender, KeyEventArgs e)
         {
-            FrmEmpleados ObjEmpleados = new FrmEmpleados();
-            ObjEmpleados.Show();
-            Hide();
+            if (e.KeyCode == Keys.Enter)
+            {
+                Fnt_Cliente();
+            }
         }
 
-        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnCobrarVenta_Click(object sender, EventArgs e)
         {
-            FrmInventario ObjInventario = new FrmInventario();
-            ObjInventario.Show();
-            Hide();
-        }
-
-        private void FrmVenta_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            Fnt_GuardarCompraDET();
         }
     }
 }

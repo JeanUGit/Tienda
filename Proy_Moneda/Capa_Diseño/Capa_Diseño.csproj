@@ -50,6 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBMonedaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBMonedaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscar.Designer.cs">
+      <DependentUpon>FrmBuscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +111,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBuscar.resx">
+      <DependentUpon>FrmBuscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +148,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DBMonedaDataSet.xsc">
+      <DependentUpon>DBMonedaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBMonedaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBMonedaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBMonedaDataSet.xss">
+      <DependentUpon>DBMonedaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -154,15 +179,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagenes\Clean.png" />
     <Content Include="Imagenes\-autorenew_90718.png" />
     <Content Include="Imagenes\1486564399-close_81512.png" />
     <Content Include="Imagenes\1492790860-8check_84164.png" />
     <Content Include="Imagenes\3643762-find-glass-magnifying-search-zoom_113420.png" />
+    <Content Include="Imagenes\liempiar.png" />
     <None Include="Imagenes\social.png" />
     <None Include="Resources\key_icon_124940.ico" />
     <None Include="Resources\lock_closed_icon_124921.ico" />
     <None Include="Imagenes\account_switch_outline_icon_140036.png" />
     <Content Include="Imagenes\3925400-bank-budget-money-stocks-icon_111538.png" />
+    <Content Include="Imagenes\Aceptar.png" />
     <Content Include="Imagenes\alertcircleoutline_110926.png" />
     <None Include="Imagenes\almacenamiento.png" />
     <Content Include="Imagenes\arrowheaddownoutline_110820.png" />
@@ -172,6 +200,8 @@
     <Content Include="Imagenes\checkmarkoutline_110785.png" />
     <None Include="Imagenes\exprimir.png" />
     <None Include="Imagenes\controlar.png" />
+    <Content Include="Imagenes\Editar.png" />
+    <Content Include="Imagenes\heditar.png" />
     <Content Include="Imagenes\hombre.png" />
     <Content Include="Imagenes\iconfinder-broom-clean-service-labor-website-4622511_122412.png" />
     <None Include="Imagenes\maquina.png" />

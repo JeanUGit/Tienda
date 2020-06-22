@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using Capa_Conexion;
+using Capa_Datos;
 namespace Capa_Logica
 {
     public class CLProductos

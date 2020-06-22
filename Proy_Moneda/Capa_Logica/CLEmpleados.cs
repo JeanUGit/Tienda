@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 using System.Data.SqlClient;
-using Capa_Conexion;
+using Capa_Datos;
 
 namespace Capa_Logica
 {
