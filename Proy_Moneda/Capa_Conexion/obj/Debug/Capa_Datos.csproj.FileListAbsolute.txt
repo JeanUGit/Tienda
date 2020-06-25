@@ -15,3 +15,9 @@ D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Conexion\bin\Debug\Capa_Conexion.pdb
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Conexion.dll
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Conexion.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Conexion.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\obj\Debug\Capa_Conexion.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\bin\Debug\Capa_Conexion.dll
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Conexion\bin\Debug\Capa_Conexion.pdb

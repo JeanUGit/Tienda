@@ -32,3 +32,4 @@ D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csprojAssemblyR
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csproj.CopyComplete
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.dll
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.pdb
+C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Logica\obj\Debug\Capa_Logica.csproj.CoreCompileInputs.cache
