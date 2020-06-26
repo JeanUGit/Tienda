@@ -25,15 +25,15 @@ namespace Capa_Diseño
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (pnlMenu.Width == 229)
+            if (pnlMenu.Width == 240)
             { timerOcultarM.Enabled = true; }
-            if (pnlMenu.Width == 95)
+            if (pnlMenu.Width == 80)
             { timerMostrarM.Enabled = true; }
         }
 
         private void timerOcultarM_Tick(object sender, EventArgs e)
         {
-            if (pnlMenu.Width <= 95)
+            if (pnlMenu.Width <= 80)
             { timerOcultarM.Enabled = false; }
             else
             { pnlMenu.Width -= 20; }
@@ -41,7 +41,7 @@ namespace Capa_Diseño
 
         private void timerMostrarM_Tick(object sender, EventArgs e)
         {
-            if (pnlMenu.Width >= 229)
+            if (pnlMenu.Width >= 240)
             { timerMostrarM.Enabled = false; }
             else
             { pnlMenu.Width += 20; }

@@ -145,7 +145,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 30);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(229, 570);
+            this.pnlMenu.Size = new System.Drawing.Size(240, 570);
             this.pnlMenu.TabIndex = 1;
             this.pnlMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMenu_MouseDown);
             // 
@@ -154,7 +154,7 @@
             this.panel6.BackColor = System.Drawing.Color.Blue;
             this.panel6.Location = new System.Drawing.Point(1, 483);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(10, 69);
+            this.panel6.Size = new System.Drawing.Size(8, 69);
             this.panel6.TabIndex = 1;
             // 
             // panel5
@@ -162,7 +162,7 @@
             this.panel5.BackColor = System.Drawing.Color.Blue;
             this.panel5.Location = new System.Drawing.Point(1, 400);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 69);
+            this.panel5.Size = new System.Drawing.Size(8, 69);
             this.panel5.TabIndex = 1;
             // 
             // panel4
@@ -170,7 +170,7 @@
             this.panel4.BackColor = System.Drawing.Color.Blue;
             this.panel4.Location = new System.Drawing.Point(1, 312);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 69);
+            this.panel4.Size = new System.Drawing.Size(8, 69);
             this.panel4.TabIndex = 1;
             // 
             // panel3
@@ -178,7 +178,7 @@
             this.panel3.BackColor = System.Drawing.Color.Blue;
             this.panel3.Location = new System.Drawing.Point(1, 225);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 69);
+            this.panel3.Size = new System.Drawing.Size(8, 69);
             this.panel3.TabIndex = 1;
             // 
             // panel2
@@ -186,7 +186,7 @@
             this.panel2.BackColor = System.Drawing.Color.Blue;
             this.panel2.Location = new System.Drawing.Point(1, 139);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 69);
+            this.panel2.Size = new System.Drawing.Size(8, 69);
             this.panel2.TabIndex = 1;
             // 
             // panel1
@@ -194,7 +194,7 @@
             this.panel1.BackColor = System.Drawing.Color.Blue;
             this.panel1.Location = new System.Drawing.Point(1, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 69);
+            this.panel1.Size = new System.Drawing.Size(8, 69);
             this.panel1.TabIndex = 0;
             // 
             // btnMenu
@@ -204,7 +204,7 @@
             this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(186, 3);
+            this.btnMenu.Location = new System.Drawing.Point(197, 3);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(40, 40);
             this.btnMenu.TabIndex = 0;
@@ -216,12 +216,12 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::Capa_Diseño.Properties.Resources.almacenamiento;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(12, 483);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(216, 70);
+            this.button3.Size = new System.Drawing.Size(228, 70);
             this.button3.TabIndex = 6;
             this.button3.Text = "Producto";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -233,12 +233,12 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::Capa_Diseño.Properties.Resources.controlar;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(12, 399);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(214, 70);
+            this.button2.Size = new System.Drawing.Size(226, 70);
             this.button2.TabIndex = 5;
             this.button2.Text = "Inventario";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -250,12 +250,12 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::Capa_Diseño.Properties.Resources.maquina;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(12, 311);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(214, 70);
+            this.button1.Size = new System.Drawing.Size(226, 70);
             this.button1.TabIndex = 4;
             this.button1.Text = "Venta";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -267,12 +267,12 @@
             this.btnVinculaciones.FlatAppearance.BorderSize = 0;
             this.btnVinculaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnVinculaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVinculaciones.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVinculaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVinculaciones.Image = global::Capa_Diseño.Properties.Resources.social;
             this.btnVinculaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVinculaciones.Location = new System.Drawing.Point(12, 225);
             this.btnVinculaciones.Name = "btnVinculaciones";
-            this.btnVinculaciones.Size = new System.Drawing.Size(214, 70);
+            this.btnVinculaciones.Size = new System.Drawing.Size(225, 70);
             this.btnVinculaciones.TabIndex = 3;
             this.btnVinculaciones.Text = "Vinculaciones";
             this.btnVinculaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -284,12 +284,12 @@
             this.btnRecargas.FlatAppearance.BorderSize = 0;
             this.btnRecargas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnRecargas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecargas.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecargas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecargas.Image = global::Capa_Diseño.Properties.Resources.navegador;
             this.btnRecargas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecargas.Location = new System.Drawing.Point(12, 139);
             this.btnRecargas.Name = "btnRecargas";
-            this.btnRecargas.Size = new System.Drawing.Size(214, 70);
+            this.btnRecargas.Size = new System.Drawing.Size(226, 70);
             this.btnRecargas.TabIndex = 2;
             this.btnRecargas.Text = "Recargas";
             this.btnRecargas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -301,13 +301,14 @@
             this.btnRegEmple.FlatAppearance.BorderSize = 0;
             this.btnRegEmple.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnRegEmple.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegEmple.Font = new System.Drawing.Font("Arial Narrow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegEmple.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegEmple.Image = global::Capa_Diseño.Properties.Resources.avatar_de_hombre;
             this.btnRegEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegEmple.Location = new System.Drawing.Point(12, 54);
             this.btnRegEmple.Name = "btnRegEmple";
-            this.btnRegEmple.Size = new System.Drawing.Size(214, 70);
+            this.btnRegEmple.Size = new System.Drawing.Size(226, 70);
             this.btnRegEmple.TabIndex = 1;
+            this.btnRegEmple.Tag = "";
             this.btnRegEmple.Text = "Empleados";
             this.btnRegEmple.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegEmple.UseVisualStyleBackColor = true;
@@ -318,9 +319,9 @@
             this.pnlContenedor.AutoScroll = true;
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Location = new System.Drawing.Point(229, 30);
+            this.pnlContenedor.Location = new System.Drawing.Point(240, 30);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(721, 570);
+            this.pnlContenedor.Size = new System.Drawing.Size(710, 570);
             this.pnlContenedor.TabIndex = 2;
             this.pnlContenedor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlContenedor_MouseDown);
             // 

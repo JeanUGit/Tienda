@@ -80,3 +80,26 @@ C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Dise
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.dll
 D:\Je-Se-Ju\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.pdb
 C:\Users\Jean carlos\Desktop\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmBuscar.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Diseño.exe.config
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Diseño.exe
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Diseño.pdb
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Logica.dll
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.dll
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Logica.pdb
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\bin\Debug\Capa_Conexion.pdb
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csprojAssemblyReference.cache
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmBuscar.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmEmpleados.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmInventario.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmLogin.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.frmMenu_Principal.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmProductos.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmRecargas.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmRegistroVinculos.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.FrmVenta.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.Properties.Resources.resources
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.GenerateResource.cache
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.CoreCompileInputs.cache
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.csproj.CopyComplete
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.exe
+C:\Users\JuanF\Tienda\Proy_Moneda\Capa_Diseño\obj\Debug\Capa_Diseño.pdb
